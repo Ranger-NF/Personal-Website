@@ -1,0 +1,38 @@
+title: "The Breakthrough"
+theme: PaperMod
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: "English"
+
+params:
+  env: production
+  keywords: [Blog, Portfolio, PaperMod, About]
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowRssButtonInSectionTermList: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hideSummary: false
+
+  homeInfoParams:
+    Title: Tech Odyssey, Treasuring Earth;
+    Content: |
+        Heyo! I'm **Fahad** aka **Ranger** 👋        
+        * Welcome to **The Breakthrough**!
+
+        * I invite you to my world of all kinds of **software** geeky things and love for mother **Earth**.
+        * Let's talk **linux**, **foss** and **nature**.
+
+  socialIcons:
+      - name: instagram
+        url: https://www.instagram.com/ranger_nf/
+      - name: github
+        url: "https://github.com/Ranger-NF"
