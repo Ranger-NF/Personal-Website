@@ -8,6 +8,7 @@ languages:
   en:
     languageName: "English"
 
+
 params:
   env: production
   keywords: [Blog, Portfolio, PaperMod, About]
@@ -36,3 +37,6 @@ params:
         url: https://www.instagram.com/ranger_nf/
       - name: github
         url: "https://github.com/Ranger-NF"
+  
+  assets:
+    favicon: "favicon.ico"
