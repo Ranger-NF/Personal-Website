@@ -8,6 +8,8 @@ languages:
   en:
     languageName: "English"
 
+taxonomies:
+  series: series
 
 params:
   env: production
@@ -22,6 +24,7 @@ params:
   disableScrollToTop: false
   comments: false
   hideSummary: false
+  ShowShareButtons: true
 
   homeInfoParams:
     Title: Tech Odyssey, Treasuring Earth;
@@ -37,6 +40,4 @@ params:
         url: https://www.instagram.com/ranger_nf/
       - name: github
         url: "https://github.com/Ranger-NF"
-  
-  assets:
-    favicon: "favicon.ico"
+
