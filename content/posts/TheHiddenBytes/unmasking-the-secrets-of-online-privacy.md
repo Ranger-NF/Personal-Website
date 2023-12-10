@@ -1,6 +1,6 @@
 
 ---
-title: "🕵️ Unmasking the Secrets of Online Privacy"
+title: "🕵🏻 Unmasking the Secrets of Online Privacy"
 date: 2023-12-06T13:13:30+05:30
 author: Ranger
 series:
@@ -13,7 +13,7 @@ cover:
 ## What's the Buzz about Online Privacy? 🤔
 For me, it is to be free from the control of big tech companies. 🕊
 
-"Why though?" (you might ask), You see, Almost every giant out there is hoarding data about your every online move 👀. This data, most of the time, will be used by them to show the user-targeted ads and other personalized targeting.
+"Why though?" (you might ask), You see, Almost every giant out there is hoarding data about your online interactions 👀. This data, most of the time, will be used by them to show user-targeted ads and other personalized targeting.
 
 Here is the kicker - data breaches are like uninvited guests crashing the party and governing bodies are like: "Hand over the loot!" 🚓 . Sadly, this drama is on replay in recent times.
 
@@ -25,7 +25,6 @@ It all began when Microsoft announced their, then, all new Windows version - Win
 So I decided to ditch windows and started looking for an alternative. After a quick online search, I stumbled across Linux and its ecosystem.
 
 I started diving into all kinds of articles about the rebel of operating systems! 🐧
-
 
 ## Unlocking the Gates: My Journey to Online Liberation 🔒
 Let's be real - Switching things up to be more private wasn't a walk in the digital park. Every step required research and reassurance, lest I summon the data loss demons. 👾
