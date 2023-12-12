@@ -3,8 +3,14 @@
     <header class="entry-header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
-    <div class="entry-content" >
-        {{ .Content | markdownify }}
+    <div class="entry-content-parent" >
+        <div class="entry-content">
+            {{ .Content | markdownify }}
+        </div>
+        <div class="entry-image" id="entry-content-pic">
+            <div class="circle"></div>
+            <img src="images/ranger.svg" alt="Your Image" class="image">
+        </div>
     </div>
 
     <footer class="entry-footer">
