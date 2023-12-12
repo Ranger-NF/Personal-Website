@@ -69,14 +69,20 @@
 
 .entry-content {
     margin: 8px 0;
-    color: var(--secondary);
-    font-size: 14px;
-    line-height: 1.6;
+    color: var(--content);
+    font-size: 16px;
+    line-height: 1.5;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
+
+.entry-hashtags {
+    color: var(--secondary);
+    font-size: 15px;
+}
+
 
 .entry-footer {
     color: var(--secondary);

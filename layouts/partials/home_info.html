@@ -13,6 +13,9 @@
         </div>
     </div>
 
+    <div class="entry-hashtags">
+        {{ .Hashtags | markdownify }}
+    </div>
     <footer class="entry-footer">
         {{ partial "social_icons.html" site.Params.socialIcons }}
     </footer>

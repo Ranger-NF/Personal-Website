@@ -28,6 +28,7 @@ params:
 
   homeInfoParams:
     Title: Tech Odyssey, Treasuring Earth;
+    Hashtags: "#TechMeetsNature #TheBreakthrough"
     Content: |
     
         - Heyy fellow human! 🌍✨
@@ -36,8 +37,7 @@ params:
         -
         - Let's dive into the world of **Linux**, **FOSS** (Free and Open Source Software), and all things tech, sprinkled with a dash of **love for Mother Earth**. 🌿 Ready for an adventure?
         - Tighten your virtual hiking boots – it's geek meets nature in the coolest fusion! 🌌🔥
-
-        - #TechMeetsNature #TheBreakthrough
+    
   socialIcons:
       - name: instagram
         url: https://www.instagram.com/ranger_nf/
