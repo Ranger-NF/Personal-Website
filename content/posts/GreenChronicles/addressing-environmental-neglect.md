@@ -4,9 +4,8 @@ date: 2023-12-16T11:55:10+05:30
 author: Ranger
 series:
 - Green Chronicles
-draft: true
-# cover:
-#     image: "images/blogs/unmasking_privacy.png"
+cover:
+    image: "images/blogs/environmental_neglect.png"
 
 ---
 
