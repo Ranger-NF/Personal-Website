@@ -35,11 +35,6 @@
     flex: 1;
 }
 
-
-.first-entry .entry-footer {
-    font-size: 14px;
-}
-
 .home-info .entry-content {
     -webkit-line-clamp: unset;
 }
@@ -71,11 +66,11 @@
     margin: 8px 0;
     color: var(--content);
     font-size: 16px;
-    line-height: 1.5;
+    padding-top: 15px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
 }
 
 .entry-hashtags {
