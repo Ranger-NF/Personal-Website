@@ -17,9 +17,9 @@
     width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: 5px dashed;
+    border: 3px dashed;
     color: var(--primary);
-    animation: rotate 25s linear infinite;
+    animation: rotate 50s linear infinite;
   }
 
   @keyframes rotate { 
