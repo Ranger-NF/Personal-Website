@@ -4,13 +4,14 @@
         <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content-parent" >
-        <div class="entry-content">
-            {{ .Content | markdownify }}
-        </div>
-        <div class="entry-image" id="entry-content-pic">
-            <div class="circle"></div>
-            <img src="images/ranger.png" alt="Ranger's Profile Picture" class="image">
+        <div class="entry-image">
+            <!-- <div class="circle"></div> -->
+            <img src="images/ranger_profile.svg" alt="Ranger's Profile Picture">
 
+        </div>
+        {{ .Content | markdownify }}
+        <div class="entry-content">
+            
         </div>
     </div>
 

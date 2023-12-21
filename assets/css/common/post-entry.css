@@ -1,8 +1,4 @@
 .first-entry {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
     min-height: 320px;
     margin: var(--gap) 0 calc(var(--gap) * 2) 0;
 }
@@ -22,22 +18,13 @@
 .first-entry .entry-content-parent {
     margin: 14px 0;
     font-size: 16px;
-    display: flex;
 }
 
 .first-entry .entry-content-parent .entry-content {
-    flex: 3;
-}
-
-.first-entry .entry-content-parent .entry-image {
-    margin: 10px;
-    position: relative;
-    flex: 1;
-}
-
-.home-info .entry-content {
+    justify-content: left;
     -webkit-line-clamp: unset;
 }
+
 
 .post-entry {
     position: relative;

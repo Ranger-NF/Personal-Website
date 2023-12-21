@@ -1,29 +1,5 @@
-  .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
+  .entry-image {
+    float: right;
+    width: 150px;
     height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
-  .circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 3px dashed;
-    color: var(--primary);
-    animation: rotate 50s linear infinite;
-  }
-
-  @keyframes rotate { 
-    100% { 
-      transform: rotateZ(360deg); 
-    }
   }

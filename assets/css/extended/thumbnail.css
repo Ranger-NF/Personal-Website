@@ -2,12 +2,7 @@
 .post-entry .entry-info  {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5px 0px;
 }
-.post-entry .entry-footer {
-    padding-top: 15px;
-}
-
 
 /* Allocate two columns when there is enough width. *
  * The thumbnail is placed in the first column, while the rest of
@@ -15,13 +10,10 @@
 @media (min-width: 700px) {
     .post-entry .entry-info {
         grid-template-columns: 3fr 2fr;
-        gap: 0px 10px;
-    }
-
-    .post-entry .entry-footer {
-        padding-top: 0px;
+        gap: 0px 15px;
     }
 }
+
 
 .post-entry .entry-info .entry-cover {
     max-width: fit-content;
@@ -31,13 +23,21 @@
 }
 
 .post-entry .entry-header {
+    display: grid;
+}
+
+.post-entry .entry-header h2 {
+    justify-self: left;
+}
+
+.post-entry .entry-card-text {
+    display: grid;
+}
+
+.post-entry .entry-info .entry-card-text .entry-content {
     align-self: center;
 }
 
-.post-entry .entry-info .entry-content {
-    align-self: center;
-}
-
-.post-entry .entry-info .entry-footer {
+.post-entry .entry-info .entry-card-text .entry-footer {
     align-self: end;
 }

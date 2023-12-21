@@ -71,23 +71,26 @@
     </h2>
   </header>
   <div class="entry-info">
-    <!-- Cover images -->
-  
-    
     {{- if (ne (.Param "hideSummary") true) }}
-    <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    <div class="entry-card-text">
+      
+      <p class="entry-content">{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+
+      <footer class="entry-footer">
+        {{- partial "post_meta.html" . -}}
+      </footer>
     </div>
-    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-    {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    {{- end }}
+
+    <!-- Cover images -->
+    <div>
+      {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+      {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+      {{- end }}
+      {{- if not (.Param "hideMeta") }}
+      {{- end }}
+    </div>
     
   </div>
-  <footer class="entry-footer">
-    {{- partial "post_meta.html" . -}}
-  </footer>
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
 {{- end }}
