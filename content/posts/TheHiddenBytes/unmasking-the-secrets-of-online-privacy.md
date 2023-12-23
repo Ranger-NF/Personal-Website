@@ -1,4 +1,3 @@
-
 ---
 title: "🕵🏻 Unmasking the Secrets of Online Privacy"
 date: 2023-12-06T13:13:30+05:30
@@ -7,7 +6,6 @@ series:
 - The Hidden Bytes
 cover:
     image: "images/blogs/unmasking_privacy.png"
-
 ---
 
 ## What's the Buzz about Online Privacy? 🤔
