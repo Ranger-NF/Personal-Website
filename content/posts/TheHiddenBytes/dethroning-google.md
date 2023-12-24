@@ -21,7 +21,7 @@ While there are alternatives like [DuckDuckGo](https://duckduckgo.com/), I find 
 
 Google Chrome, a memory hog with a side of controversial [anti-competitive policies](https://www.youtube.com/watch?v=v4gXhmzQztE). Refusing to play along in the drama, I searched for the best alternative, leading me to [Brave](https://brave.com/) and my daily companion, the one and only [Firefox](https://www.mozilla.org/en-US/firefox/). 🫂
 
-Why Firefox, you ask? I blame [Chromimum's](https://en.wikipedia.org/wiki/Chromium_(web_browser)) monopoly and its connection with, you guessed it, Google. IMonopolies, my friend, are bad — they get too comfy, too quick (overly simplified perspective). Plus, there's the whole manifest V3 saga (a story for another day). 😅
+Why Firefox, you ask? I blame [Chromimum's](https://en.wikipedia.org/wiki/Chromium_(web_browser)) monopoly and its connection with, you guessed it, Google. Monopolies, my friend, are bad — they get too comfy, too quick (overly simplified perspective). Plus, there's the whole manifest V3 saga (a story for another day). 😅
 
 ![browser-market-share](/images/blogs/graphs/browser-market-share.png)
 
