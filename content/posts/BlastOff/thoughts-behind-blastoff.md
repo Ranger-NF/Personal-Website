@@ -1,6 +1,6 @@
 ---
 title: "💭 Thoughts behind BlastOff"
-date: 2024-06-05T18:40:15+05:30
+date: 2024-06-04T18:40:15+05:30
 author: Ranger
 series:
 - BlastOff
