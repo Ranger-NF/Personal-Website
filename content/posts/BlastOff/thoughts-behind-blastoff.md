@@ -5,7 +5,7 @@ author: Ranger
 series:
 - BlastOff
 cover:
-    image: "images/blogs/thoughts_behind_bastoff.png"
+    image: "images/blogs/thoughts_behind_blastoff.png"
 
 ---
 
