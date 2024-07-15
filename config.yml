@@ -3,7 +3,7 @@ theme: PaperMod
 baseURL: "https://thebreakthrough.netlify.app/"
 
 copyright: |
-  Made with ❤ by [Ranger](https://www.instagram.com/ranger_nf/)
+  Made with ❤ by [Ranger](https://github.com/Ranger-NF)
 
 minify:
   disableXML: true
@@ -28,24 +28,27 @@ params:
   disableScrollToTop: false
   comments: false
   hideSummary: false
-  ShowShareButtons: true
+  showShareButtons: true
+  ShareButtons: ["linkedin", "instagram", "x"]
 
   homeInfoParams:
-    Title: Tech Odyssey, Treasuring Earth;
-    Hashtags: "#TechMeetsNature #TheBreakthrough"
+    Title: Game Developer, casual Programmer;
+    Hashtags: "#lovesOSS #IndieGameDeveloper #LinuxUser"
     Content: |
-    
-        Heyy fellow human! 🌍✨
+        Heyy fellow human! 👋
         
-        I'm **Fahad**, a.k.a. **Ranger**, and you've just stepped into **The Breakthrough**! 🚀💻
+        I'm **Fahad**, a.k.a. **Ranger**
+
         
-        Let's dive into the world of **Linux**, **FOSS** (Free and Open Source Software), and all things tech, sprinkled with a dash of **love for Mother Earth**. 🌿 Ready for an adventure?
-        
-        Tighten your virtual hiking boots – it's geek meets nature in the coolest fusion! 🌌🔥
+        I love programming things that are enjoyable and useful ✨
     
   socialIcons:
       - name: instagram
         url: https://www.instagram.com/ranger_nf/
       - name: github
         url: "https://github.com/Ranger-NF"
+      - name: linkedin
+        url: https://www.linkedin.com/in/just-fahad/
+      - name: itchio
+        url: https://ranger-nf.itch.io/
 

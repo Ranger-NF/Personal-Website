@@ -2,7 +2,7 @@
 title: "🤔 What's Breakthrough?"
 date: 2023-11-24T20:48:14+05:30
 author: Ranger
-summary: "**TLDR**; A website comprising whirlwind of my thoughts"
+summary: "**TLDR**; A space where I can write down my thoughts!"
 weight: 1
 ---
 
