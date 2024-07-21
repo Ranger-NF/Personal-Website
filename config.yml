@@ -1,3 +1,4 @@
+title: "Fahad"
 theme: PaperMod
 baseURL: "https://thebreakthrough.netlify.app/"
 
@@ -18,7 +19,6 @@ params:
   env: production
   keywords: [Blog, Portfolio, PaperMod, About]
   defaultTheme: auto
-  ShowReadingTime: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: "false"
@@ -27,21 +27,27 @@ params:
   disableScrollToTop: false
   comments: false
   hideSummary: false
-  showShareButtons: true
+  showShareButtons: false
   ShareButtons: ["linkedin", "instagram", "x"]
 
   profileMode:
     enabled: true
-    title: "Mohammed Fahad" # optional default will be site title
-    subtitle: "A student who Love creating projects that are intuitive and fun 🍀"
-    imageUrl: "images/ranger_profile.svg" # optional
-    imageWidth: 240 # custom size
-    imageHeight: 240 # custom size
+    title: "Mohammed Fahad"
+    subtitle: |
+      #### Ranger
+      Kerala, India
+
+      > A student who Love creating projects that are intuitive and fun 🍀
+
+
+    imageUrl: "images/ranger_profile.svg"
+    imageWidth: 220
+    imageHeight: 220 
     buttons:
       - name: Blog Posts
         url: "/posts"
       - name: Projects
-        url: https://github.com/Ranger-NF?tab=repositories
+        url: "/projects"
 
   socialIcons:
       - name: instagram
@@ -52,4 +58,3 @@ params:
         url: https://www.linkedin.com/in/just-fahad/
       - name: itchio
         url: https://ranger-nf.itch.io/
-
