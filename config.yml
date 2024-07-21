@@ -1,4 +1,3 @@
-title: "The Breakthrough"
 theme: PaperMod
 baseURL: "https://thebreakthrough.netlify.app/"
 
@@ -31,17 +30,19 @@ params:
   showShareButtons: true
   ShareButtons: ["linkedin", "instagram", "x"]
 
-  homeInfoParams:
-    Title: Game Developer, casual Programmer;
-    Hashtags: "#lovesOSS #IndieGameDeveloper #LinuxUser"
-    Content: |
-        Heyy fellow human! 👋
-        
-        I'm **Fahad**, a.k.a. **Ranger**
+  profileMode:
+    enabled: true
+    title: "Mohammed Fahad" # optional default will be site title
+    subtitle: "A student who Love creating projects that are intuitive and fun 🍀"
+    imageUrl: "images/ranger_profile.svg" # optional
+    imageWidth: 240 # custom size
+    imageHeight: 240 # custom size
+    buttons:
+      - name: Blog Posts
+        url: "/posts"
+      - name: Projects
+        url: https://github.com/Ranger-NF?tab=repositories
 
-        
-        I love programming things that are enjoyable and useful ✨
-    
   socialIcons:
       - name: instagram
         url: https://www.instagram.com/ranger_nf/
