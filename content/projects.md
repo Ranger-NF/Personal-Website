@@ -23,7 +23,7 @@ Status: Completed
 # 🔍 Eval You
 {class="post-content-center"}
 
-Minimalistic app to keep track of academics.
+Minimalistic __android app__ to keep track of your academics.
 Built with `flutter`
 {class="post-content-center"}
 
@@ -38,7 +38,7 @@ Status: Work In Progress
 # 🗻 Mount Bot
 {class="post-content-center"}
 
-A discord __bot__ made for entertainment purposes.
+A __discord bot__ made for entertainment purposes.
 Made with `discord.js`
 {class="post-content-center"}
 
@@ -53,7 +53,7 @@ Status: Completed (Outdated)
 # 📦 Immich controller
 {class="post-content-center"}
 
-A Gnome 43 extension to control immich docker containers using buttons on desktop's top bar.
+A __Gnome 43 extension__ to control immich docker containers using buttons on desktop's top bar.
 {class="post-content-center"}
 
 Status: Abandoned
