@@ -21,8 +21,6 @@ params:
   defaultTheme: auto
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: "false"
-  ShowRssButtonInSectionTermList: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
@@ -44,10 +42,10 @@ params:
     imageWidth: 220
     imageHeight: 220 
     buttons:
-      - name: Blog Posts
-        url: "/posts"
       - name: Projects
         url: "/projects"
+      - name: Blog Posts
+        url: "/posts"
 
   socialIcons:
       - name: instagram
@@ -58,3 +56,10 @@ params:
         url: https://www.linkedin.com/in/just-fahad/
       - name: itchio
         url: https://ranger-nf.itch.io/
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
