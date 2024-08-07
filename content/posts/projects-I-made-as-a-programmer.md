@@ -1,7 +1,7 @@
 ---
-title: "🍳 Projects I Made as a Programmer
-date: 2024-08-01T20:44:52+05:30
+title: "🍳 Projects I Made as a Programmer"
 draft: true
+date: 2024-08-01T20:44:52+05:30
 author: Ranger
 ---
 
