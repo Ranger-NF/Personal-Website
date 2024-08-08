@@ -1,8 +1,7 @@
 <p align="center">
-<img src="static/android-chrome-512x512.png" width="150" title="The Breakthrough logo">
+<img class="rounded-circle" src="static/android-chrome-512x512.png" width="150" title="The Breakthrough logo">
 </p>
 
-<h3 align="center">The Breakthrough</h3>
 <p align="center" style="font-size: 14px;">A personal Portfolio / Blogging website</p>
 
 <p align="center">
@@ -12,8 +11,9 @@
 <br/>
 
 <p align="center">
-    <img src="docs/breakthrough-home.png" width="400" height="auto">&nbsp;&nbsp;
-    <img src="docs/breakthrough-blog.png" width="400" height="auto">
+    <img src="docs/home.png" width="400" height="auto">  
+    <img src="docs/projects.png" width="400" height="auto">
+    <img src="docs/blog.png" width="400" height="auto">
 </p>
 
 > 🏗 Made using [Hugo](https://gohugo.io/) and [PaperMod](https://github.com/adityatelange/hugo-PaperMod/)
@@ -30,9 +30,7 @@
 - 🌈 Emojified interesting [content](https://thebreakthrough.netlify.app/posts/whats-breakthrough/)
 - 📈 Integrated [GoatCounter](https://www.goatcounter.com/)
 
-
 <hr>
-
 
 ## Guide
 
@@ -46,17 +44,22 @@
 ```
 git clone https://github.com/Ranger-NF/Breakthrough
 ```
+
 2. In the directory root, run
-```
-hugo server -D
-```
+   
+   ```
+   hugo server -D
+   ```
 3. To publish the site, run
-```
-hugo
-```
-The files will be available in `public/` directory
+   
+   ```
+   hugo
+   ```
+   
+   The files will be available in `public/` directory
 
 ### How to make a new blog post?
+
 1. Create a new markdown file (eg: blog-title.md) in `content/posts/` directory.
 
 > [!NOTE]
