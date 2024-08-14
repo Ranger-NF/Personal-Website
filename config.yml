@@ -37,25 +37,26 @@ params:
 
       > A student who loves creating projects that are intuitive and fun 🍀
 
-
     imageUrl: "images/ranger_profile.svg"
     imageWidth: 220
-    imageHeight: 220 
+    imageHeight: 220
     buttons:
-      - name: Projects
+      - name: 🚀 Projects
         url: "/projects"
-      - name: Blog Posts
+      - name: 📖 Scrapbook
+        url: "https://scrapbook.hackclub.com/Ranger"
+      - name: 💭Posts
         url: "/posts"
 
   socialIcons:
-      - name: instagram
-        url: https://www.instagram.com/ranger_nf/
-      - name: github
-        url: "https://github.com/Ranger-NF"
-      - name: linkedin
-        url: https://www.linkedin.com/in/just-fahad/
-      - name: itchio
-        url: https://ranger-nf.itch.io/
+    - name: instagram
+      url: https://www.instagram.com/ranger_nf/
+    - name: github
+      url: "https://github.com/Ranger-NF"
+    - name: linkedin
+      url: https://www.linkedin.com/in/just-fahad/
+    - name: itchio
+      url: https://ranger-nf.itch.io/
 
 markup:
   goldmark:
