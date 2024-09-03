@@ -20,7 +20,7 @@ params:
   keywords: [Blog, Portfolio, PaperMod, About]
   defaultTheme: auto
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
