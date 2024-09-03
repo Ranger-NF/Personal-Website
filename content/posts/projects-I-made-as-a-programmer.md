@@ -1,6 +1,5 @@
 ---
 title: "🍳 Projects I Made as a Programmer"
-draft: true
 date: 2024-09-03T09:44:52+05:30
 author: Ranger
 ---
