@@ -1,17 +1,30 @@
 ---
 title: "🚀 BlastOff"
 date: 2024-09-03T09:41:00+05:30
+summary: "BlastOff is a casual endless runner game featuring vector graphics"
 author: Ranger
 cover:
     image: "images/projects/blastoff-title.svg"
 ---
 
-BlastOff is a casual endless runner __game__ featuring vector graphics.
-Built using `Godot v4.2.2`
+BlastOff is a casual endless runner with an emphasize on vector graphics. Available for [web and android](https://ranger-nf.itch.io/blastoff). It is built using **Godot v4.2.2**.
 
-It is available for Android, Web and Linux
+Collect stars and powerups while avoiding the incoming birds and satellites. The game features leaderboards and minimal customization options.
 
+The best part is that its open-sourced on [GitHub](https://github.com/Ranger-NF/BlastOff)
 
-Status: Completed
+## 🎰 Gameplay overview
+- Avoid all obstacles
+- Survive and get high scores
+- Customize your skin to you liking!
 
-[GitHub](https://github.com/Ranger-NF/BlastOff) | [itch.io](https://ranger-nf.itch.io/blastoff)
+## 👨‍💻 Controls
+- Touch/Mouse controls:
+  - **Touch/Press on the right side** to move to right
+  - **Touch/Press on the left side** to move to left
+  - **Double tap** to activate/deactivate PowerUp
+
+- Keyboard controls:
+  - Press **a** to move to right
+  - Press **d** to move to left
+  - Press **space** to activate/deactivate PowerUp

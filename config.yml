@@ -3,7 +3,7 @@ theme: PaperMod
 baseURL: "https://justfahad.me/"
 
 copyright: |
-  Made with ❤ by [Ranger](https://github.com/Ranger-NF)
+  Made with ♡ by [Ranger](https://github.com/Ranger-NF)
 
 minify:
   disableXML: true
@@ -20,13 +20,16 @@ params:
   keywords: [Blog, Portfolio, PaperMod, About]
   defaultTheme: auto
   ShowPostNavLinks: true
-  ShowBreadCrumbs: false
+  ShowBreadCrumbs: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
   hideSummary: false
   showShareButtons: false
   ShareButtons: ["linkedin", "instagram", "x"]
+
+  cover:
+    hiddenInList: true
 
   profileMode:
     enabled: true
