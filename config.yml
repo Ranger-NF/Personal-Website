@@ -40,9 +40,8 @@ params:
 
       > A student who loves creating projects that are intuitive and fun 🍀
 
-    imageUrl: "images/ranger_profile.svg"
-    imageWidth: 200
-    imageHeight: 200
+    imageUrl: "images/fahad-photo.png"
+
     buttons:
       - name: 🚀 Projects
         url: "/projects"
