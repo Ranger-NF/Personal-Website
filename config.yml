@@ -35,10 +35,18 @@ params:
     enabled: true
     title: "Mohammed Fahad"
     subtitle: |
-      #### Ranger
+      #### aka Ranger
       Kerala, India
 
-      > A student who loves creating projects that are intuitive and fun 🍀
+      ...
+
+      Game Developer 🎮
+
+      CSE Undergrad at **GEC Palakkad** 🏫
+
+      Loves creating projects that are intuitive and fun 🍀
+
+      ---
 
     imageUrl: "images/fahad-photo.png"
 
