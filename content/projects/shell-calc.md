@@ -1,8 +1,8 @@
 ---
 title: "🧮 Shell Calc"
 date: 2024-11-19T07:50:00+05:30
-summary: "BlastOff is a casual endless runner game featuring vector graphics"
-author: Ranger
+summary: "Simple calculator served in terminal user interface"
+author: Fahad
 cover:
     image: "images/projects/shel-calc-idea.png"
 ---
