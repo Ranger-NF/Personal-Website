@@ -11,9 +11,10 @@
 <br/>
 
 <p align="center">
-    <img src="docs/home.png" width="400" height="auto">  
-    <img src="docs/projects.png" width="400" height="auto">
-    <img src="docs/blog.png" width="400" height="auto">
+    <img src="docs/home-light.jpg" width="auto" height="400">
+    <img src="docs/home-dark.jpg" width="auto" height="400">
+    <img src="docs/projects-light.jpg" width="auto" height="400">
+    <img src="docs/projects-dark.jpg" width="auto" height="400">
 </p>
 
 > 🏗 Made using [Hugo](https://gohugo.io/) and [PaperMod](https://github.com/adityatelange/hugo-PaperMod/)
@@ -46,16 +47,16 @@ git clone https://github.com/Ranger-NF/Breakthrough
 ```
 
 2. In the directory root, run
-   
+
    ```
    hugo server -D
    ```
 3. To publish the site, run
-   
+
    ```
    hugo
    ```
-   
+
    The files will be available in `public/` directory
 
 ### How to make a new blog post?
