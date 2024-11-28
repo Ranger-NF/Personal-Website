@@ -1,0 +1,159 @@
+/* Custom theme overrides */
+:root {
+    --theme: linear-gradient(160deg, #fff2df 0%, #fff4e3 100%);
+    --entry: rgba(255, 255, 255, 0.95);
+    --primary: #2c1810;
+    --secondary: #594317;
+    --tertiary: rgba(89, 67, 23, 0.16);
+    --content: #2c1810;
+    --hljs-bg: #fff8e7;
+    --code-bg: #fff8e7;
+    --border: #ffd70050;
+}
+
+.dark {
+    --theme: linear-gradient(200deg, #1f1f1f 0%, #2d2d2d 50%, #383838 100%);
+    --entry: rgba(35, 35, 35, 0.95);
+    --primary: #ffffff;
+    --secondary: #e0e0e0;
+    --tertiary: rgba(255, 255, 255, 0.16);
+    --content: #f0f0f0;
+    --hljs-bg: #2a2a2a;
+    --code-bg: #2a2a2a;
+    --border: #ffffff30;
+}
+
+/* Apply gradient background to body */
+body {
+    background: var(--theme);
+}
+
+/* Custom element styling */
+.post-title {
+    color: var(--primary);
+}
+
+.post-content a,
+.post-content a:hover {
+    color: #594317;
+    box-shadow: 0 1px 0 #594317;
+}
+
+.dark .post-content a,
+.dark .post-content a:hover {
+    color: #ffffff;
+    box-shadow: 0 1px 0 #ffffff;
+}
+
+.button {
+    background: #2c1810;
+    color: #fff4e3;
+}
+
+.button:hover {
+    background: #594317;
+}
+
+.dark .button {
+    background: #ffffff;
+    color: #1f1f1f;
+}
+
+.dark .button:hover {
+    background: #e0e0e0;
+}
+
+.social-icons a {
+    color: var(--primary);
+}
+
+.social-icons a:hover {
+    color: #594317;
+}
+
+.dark .social-icons a:hover {
+    color: #ffffff;
+}
+
+.post-entry {
+    border: 1px solid var(--border);
+    background: var(--entry);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu {
+    color: var(--primary);
+}
+
+.menu a:hover {
+    color: #594317;
+}
+
+.dark .menu a:hover {
+    color: #ffffff;
+}
+
+code {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    color: var(--content);
+}
+
+blockquote {
+    border-left: 4px solid #594317;
+    background: var(--tertiary);
+    color: var(--content);
+}
+
+.dark blockquote {
+    border-left: 4px solid #ffffff;
+}
+
+.pagination a:hover {
+    background: var(--tertiary);
+}
+
+/* Additional text color fixes */
+.post-content {
+    color: var(--content);
+}
+
+.post-meta {
+    color: var(--secondary);
+}
+
+.post-description {
+    color: var(--secondary);
+}
+
+/* Projects page specific styles */
+.terms-tags li {
+    background: var(--entry);
+    border: 1px solid var(--border);
+}
+
+.terms-tags a {
+    color: var(--primary);
+}
+
+.terms-tags a:hover {
+    color: #594317;
+}
+
+.dark .terms-tags a:hover {
+    color: #ffffff;
+}
+
+.terms-tags .terms-count {
+    color: var(--secondary);
+}
+
+/* Card styles for projects */
+.post-entry {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
