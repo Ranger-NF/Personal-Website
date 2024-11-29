@@ -12,15 +12,15 @@
 }
 
 .dark {
-    --theme: linear-gradient(200deg, #1f1f1f 0%, #2d2d2d 50%, #383838 100%);
-    --entry: rgba(35, 35, 35, 0.95);
+    --theme: linear-gradient(160deg, #2c1810 0%, #4b2314 100%);
+    --entry: #2b1710;
     --primary: #ffffff;
     --secondary: #e0e0e0;
     --tertiary: rgba(255, 255, 255, 0.16);
     --content: #f0f0f0;
     --hljs-bg: #2a2a2a;
     --code-bg: #2a2a2a;
-    --border: #ffffff30;
+    --border: #ffd7d7;
 }
 
 /* Apply gradient background to body */
@@ -113,10 +113,6 @@ blockquote {
     background: var(--tertiary);
 }
 
-/* Additional text color fixes */
-.post-content {
-    color: var(--content);
-}
 
 .post-meta {
     color: var(--secondary);
@@ -124,12 +120,6 @@ blockquote {
 
 .post-description {
     color: var(--secondary);
-}
-
-/* Projects page specific styles */
-.terms-tags li {
-    background: var(--entry);
-    border: 1px solid var(--border);
 }
 
 .terms-tags a {
@@ -154,6 +144,6 @@ blockquote {
 }
 
 .post-entry:hover {
-    transform: translateY(-2px);
+    transform: translateY(-6px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
