@@ -1,6 +1,6 @@
 ---
-title: "Cuboid Surface Area"
-date: 2024-12-13T06:48:05+05:30
+title: "Cuboid Area"
+date: 2024-12-13T08:06:12+05:30
 author: Fahad
 series:
 - CodeHub
