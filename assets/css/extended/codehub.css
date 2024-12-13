@@ -1,0 +1,16 @@
+.hub {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 5px;
+}
+
+.codehub-post-entry {
+    position: relative;
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+    background: var(--entry);
+    border-radius: var(--radius);
+    transition: transform 0.1s;
+    border: 1px solid var(--border);
+}
