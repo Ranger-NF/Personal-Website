@@ -38,9 +38,7 @@
     {{- end}}
 
     {{- if .Params.codeFile}}
-    <pre><code>
-    {{readFile .Params.codeFile}}
-    </code></pre>
+    <pre><code>{{readFile .Params.codeFile}}</code></pre>
     {{- end}}
   </div>
 

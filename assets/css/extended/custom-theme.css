@@ -1,19 +1,21 @@
 /* Custom theme overrides */
 :root {
     --theme: linear-gradient(160deg, #fff2df 0%, #fff4e3 100%);
-    --entry: rgba(255, 255, 255, 0.95);
+    --entry: rgba(255, 255, 255, 0.747);
+    --entry-hover: #ffffffbe;
     --primary: #2c1810;
     --secondary: #594317;
     --tertiary: rgba(89, 67, 23, 0.16);
     --content: #2c1810;
-    --hljs-bg: #fff8e7;
-    --code-bg: #fff8e7;
+    --hljs-bg: #2a2a2a;
+    --code-bg: #2a2a2a;
     --border: #ffd70050;
 }
 
 .dark {
     --theme: linear-gradient(160deg, #2c1810 0%, #4b2314 100%);
     --entry: #2b1710;
+    --entry-hover: #4b291d;
     --primary: #ffffff;
     --secondary: #e0e0e0;
     --tertiary: rgba(255, 255, 255, 0.16);
@@ -24,7 +26,7 @@
 }
 
 /* Apply gradient background to body */
-body {
+body, .list {
     background: var(--theme);
 }
 
@@ -111,6 +113,19 @@ blockquote {
 
 .pagination a:hover {
     background: var(--tertiary);
+    color: var(--primary);
+}
+
+.pagination {
+    color: var(--entry);
+}
+
+.paginav {
+    background: var(--entry);
+}
+
+.paginav a:hover {
+    background: var(--entry-hover);
 }
 
 

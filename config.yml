@@ -16,6 +16,7 @@ taxonomies:
   series: series
 
 params:
+  ShowCodeCopyButtons: true
   env: production
   keywords: [Blog, Portfolio, PaperMod, About]
   defaultTheme: auto
@@ -28,6 +29,15 @@ params:
   showShareButtons: false
   ShareButtons: ["linkedin", "instagram", "x"]
 
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang:
+    - r
+    - python
+    - sql
+    - yaml
+  highlightjsTheme: github
+  highlightjsVersion: 9.12.0
+  
   cover:
     hiddenInList: true
 
@@ -48,10 +58,10 @@ params:
     buttons:
       - name: 🚀 Projects
         url: "/projects"
-      - name: 📖 Scrapbook
-        url: "https://scrapbook.hackclub.com/Ranger"
       - name: 💭Posts
         url: "/posts"
+      - name: 💻 CodeHub
+        url: "/codehub"
 
   socialIcons:
     - name: instagram
