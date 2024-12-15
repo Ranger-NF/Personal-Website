@@ -5,4 +5,5 @@ author: Fahad
 series:
 - CodeHub
 codeFile: "code/triangle-classification.py"
+isCodeRunnable: true
 ---

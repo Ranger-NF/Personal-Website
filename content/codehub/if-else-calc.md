@@ -5,4 +5,5 @@ author: Fahad
 series:
 - CodeHub
 codeFile: "code/if-else-calc.py"
+isCodeRunnable: true
 ---

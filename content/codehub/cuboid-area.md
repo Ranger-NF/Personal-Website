@@ -5,4 +5,5 @@ author: Fahad
 series:
 - CodeHub
 codeFile: "code/cuboid-area.py"
+isCodeRunnable: true
 ---

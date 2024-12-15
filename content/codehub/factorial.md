@@ -5,4 +5,5 @@ author: Fahad
 series:
 - CodeHub
 codeFile: "code/factorial.py"
+isCodeRunnable: true
 ---

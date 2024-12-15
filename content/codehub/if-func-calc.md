@@ -5,4 +5,5 @@ author: Fahad
 series:
 - CodeHub
 codeFile: "code/if-func-calc.py"
+isCodeRunnable: true
 ---

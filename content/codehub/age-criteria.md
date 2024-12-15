@@ -5,4 +5,5 @@ author: Fahad
 series:
 - CodeHub
 codeFile: "code/age-criteria.py"
+isCodeRunnable: true
 ---

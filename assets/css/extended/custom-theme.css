@@ -162,3 +162,19 @@ blockquote {
     transform: translateY(-6px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
+
+#coderunner {
+    width: 100%;
+    color: var(--entry);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 36px;
+    background: var(--primary);
+    border-radius: calc(36px / 2);
+    padding: 0 16px
+}
+
+#coderunner:hover {
+    background: var(--tertiary);
+    color: var(--primary);
+}

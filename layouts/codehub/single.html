@@ -1,5 +1,25 @@
 {{- define "main" }}
+<script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js">
+</script>
+<script type="text/python">
+  import sys
+  from browser import document, window
+  from browser.widgets.dialog import InfoDialog
+  result = []
+  class BrowserOutput:
+    def write(self, data):
+      result.append(str(data))
 
+  def click(ev):
+    sys.stdout = BrowserOutput()
+    exec(document["code-display"].textContent)
+    document["code-output"].textContent = " ".join(result)
+    document["code-output"].style.display = "block"
+
+  document["coderunner"].bind("click", click)
+</script>
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -38,7 +58,11 @@
     {{- end}}
 
     {{- if .Params.codeFile}}
-    <pre><code>{{readFile .Params.codeFile}}</code></pre>
+    <pre><code id="code-display">{{readFile .Params.codeFile}}</code></pre>
+    {{- if .Params.isCodeRunnable}}
+    <button id="coderunner">Run</button>
+    <pre><code id="code-output" style="display: none;"></code></pre>
+    {{- end}}
     {{- end}}
   </div>
 
