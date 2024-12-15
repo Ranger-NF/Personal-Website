@@ -1,1 +1,1 @@
-CodeHub is a space where small code of simple programs will be specified
+🌏 CodeHub is a space where you can find simple code snippets.

@@ -4,7 +4,7 @@
 <header class="page-header">
   {{- partial "breadcrumbs.html" . }}
   <h1>
-    <!-- {{ .Title }} -->
+    {{ .Title }}
     {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
     {{- with .OutputFormats.Get "rss" }}
     <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
