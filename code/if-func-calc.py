@@ -1,10 +1,11 @@
-print("\nBasic Calculator (using if-else and functions) (Cycle 2, Exp. 1b)")
-print("======\n")
+print("""Enter the operation
+    1) add
+    2) subtract
+    3) Multiply
+    4) Divide
+    5) Modulus""")
 
-
-print("Enter the operation \n1) add\n2) subtract\n3) Multiply\n4) Divide\n5) Modulus")
 operation = int(input("Select your operation [1 to 5]: "))
-
 x = float(input("Enter first number: "))
 y = float(input("Enter second number: "))
 
@@ -28,17 +29,17 @@ result = 0
 
 if operation == 1:
 	result = add(x, y)
-	
+
 elif operation == 2:
 	result = subtract(x, y)
-	
+
 elif operation == 3:
 
 	result = multiply(x, y)
-	
+
 elif operation == 4:
 	result = divide(x, y)
-	
+
 elif operation == 5:
 	result = modulus(x, y)
 else:

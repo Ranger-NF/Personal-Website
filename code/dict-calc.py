@@ -1,4 +1,9 @@
-print("Enter the operation \n1) add\n2) subtract\n3) Multiply\n4) Divide\n5) Modulus")
+print("""Enter the operation
+    1) add
+    2) subtract
+    3) Multiply
+    4) Divide
+    5) Modulus""")
 
 operation = int(input("Select your operation [1 to 5]: "))
 
@@ -34,5 +39,3 @@ if resulting_func:
 	print('\nThe result is' ,resulting_func(x,y))
 else:
 	print('\nInavlid operation (Available option numbers are: 1 to 5)')
-	
-
