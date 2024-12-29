@@ -3,7 +3,7 @@ theme: PaperMod
 baseURL: "https://justfahad.me/"
 
 copyright: |
-  Made with ♡ by [Fahad](https://github.com/Ranger-NF)
+  Made with ♡ by [Fahad](https://github.com/Ranger-NF/Personal-Website)
 
 minify:
   disableXML: true
@@ -37,7 +37,7 @@ params:
     - yaml
   highlightjsTheme: github
   highlightjsVersion: 9.12.0
-  
+
   cover:
     hiddenInList: true
 
