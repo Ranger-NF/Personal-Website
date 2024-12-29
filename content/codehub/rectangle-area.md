@@ -1,5 +1,5 @@
 ---
-title: "Rectangle Area"
+title: "Program to Calculate the Area of a Rectangle"
 date: 2024-12-13T08:06:13+05:30
 author: Fahad
 series:

@@ -1,5 +1,5 @@
 ---
-title: "Case Calculator"
+title: "Program to Calculate Case Values"
 date: 2024-12-29T21:20:09+05:30
 author: Fahad
 series:

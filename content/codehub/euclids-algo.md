@@ -1,5 +1,5 @@
 ---
-title: "Euclids Algo"
+title: "Program to Implement Euclid's Algorithm for GCD"
 date: 2024-12-13T08:06:12+05:30
 author: Fahad
 series:

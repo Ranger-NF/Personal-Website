@@ -1,5 +1,5 @@
 ---
-title: "If Else Calc"
+title: "Program to Calculate Using If-Else Statements"
 date: 2024-12-13T08:06:13+05:30
 author: Fahad
 series:

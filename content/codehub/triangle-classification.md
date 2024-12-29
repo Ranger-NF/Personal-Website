@@ -1,5 +1,5 @@
 ---
-title: "Triangle Classification"
+title: "Program to Classify Triangles Based on Sides"
 date: 2024-12-13T08:06:14+05:30
 author: Fahad
 series:

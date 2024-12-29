@@ -1,5 +1,5 @@
 ---
-title: "String Methods"
+title: "Program to Demonstrate String Methods in Python"
 date: 2024-12-13T08:06:13+05:30
 author: Fahad
 series:

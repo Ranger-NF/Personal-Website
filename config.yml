@@ -3,7 +3,7 @@ theme: PaperMod
 baseURL: "https://justfahad.me/"
 
 copyright: |
-  Made with ♡ by [Ranger](https://github.com/Ranger-NF)
+  Made with ♡ by [Fahad](https://github.com/Ranger-NF)
 
 minify:
   disableXML: true
@@ -53,7 +53,7 @@ params:
 
       Loves creating projects that are intuitive and fun 🍀
 
-    imageUrl: "images/fahad-photo.png"
+    imageUrl: "images/fahad-photo.jpg"
 
     buttons:
       - name: 🚀 Projects

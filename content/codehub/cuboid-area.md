@@ -1,5 +1,5 @@
 ---
-title: "Cuboid Area"
+title: "Program to Calculate the Total Surface Area of a Rectangular Cuboid"
 date: 2024-12-13T08:06:12+05:30
 author: Fahad
 series:
