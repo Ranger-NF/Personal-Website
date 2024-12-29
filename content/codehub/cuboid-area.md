@@ -7,3 +7,6 @@ series:
 codeFile: "code/cuboid-area.py"
 isCodeRunnable: true
 ---
+
+### Description
+This script calculates the surface area of a cuboid. The user is prompted to enter the length, breadth, and height of the cuboid, and the program computes the area using the formula: `area = 2 * (length*breadth + breadth*height + length*height)`.

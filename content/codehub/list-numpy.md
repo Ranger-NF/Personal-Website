@@ -7,3 +7,5 @@ series:
 codeFile: "code/list-numpy.py"
 isCodeRunnable: false
 ---
+### Description
+This script demonstrates the use of NumPy for array manipulation. It shows how to create a NumPy array, append elements, and delete specific elements, showcasing the efficiency of NumPy for numerical operations.

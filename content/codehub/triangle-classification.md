@@ -7,3 +7,6 @@ series:
 codeFile: "code/triangle-classification.py"
 isCodeRunnable: true
 ---
+
+### Description
+This script classifies triangles based on the lengths of their sides. The user inputs the lengths of the three sides, and the program determines whether the triangle is equilateral, isosceles, or scalene.

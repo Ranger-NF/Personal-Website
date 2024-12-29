@@ -7,3 +7,5 @@ series:
 codeFile: "code/prime-num.py"
 isCodeRunnable: true
 ---
+### Description
+This script finds and prints all prime numbers up to a specified limit. The user inputs the upper limit, and the program checks each number for primality and prints it if it is prime.

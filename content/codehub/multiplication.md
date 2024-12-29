@@ -7,3 +7,5 @@ series:
 codeFile: "code/multiplication.py"
 isCodeRunnable: true
 ---
+### Description
+This script prints the multiplication table for a given number. The user inputs a number, and the program displays the results of multiplying that number by integers from 1 to 10.

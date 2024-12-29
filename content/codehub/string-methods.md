@@ -7,3 +7,6 @@ series:
 codeFile: "code/string-methods.py"
 isCodeRunnable: true
 ---
+
+### Description
+This script demonstrates various string methods in Python. It shows how to manipulate strings, including methods for changing case, finding substrings, and replacing parts of the string.
