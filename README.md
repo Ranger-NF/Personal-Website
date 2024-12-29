@@ -14,7 +14,7 @@
     <img src="docs/home-light.jpg" width="auto" height="400">
     <img src="docs/home-dark.jpg" width="auto" height="400">
     <img src="docs/projects-light.jpg" width="auto" height="400">
-    <img src="docs/projects-dark.jpg" width="auto" height="400">
+    <img src="docs/codehub-dark.jpg" width="auto" height="400">
 </p>
 
 > 🏗 Made using [Hugo](https://gohugo.io/) and [PaperMod](https://github.com/adityatelange/hugo-PaperMod/)
