@@ -16,7 +16,7 @@
     --theme: linear-gradient(160deg, #2c1810 0%, #4b2314 100%);
     --entry: #2b1710;
     --entry-hover: #4b291d;
-    --primary: #ffffff;
+    --primary: #fff2df;
     --secondary: #e0e0e0;
     --tertiary: rgba(255, 255, 255, 0.16);
     --content: #f0f0f0;
@@ -34,7 +34,7 @@ body, .list {
 
 .dark.list, body {
     background: var(--theme);
-    background-image: url('../../background/topography.svg'), var(--theme);    
+    background-image: url('../../background/topography.svg'), var(--theme);
 }
 
 
