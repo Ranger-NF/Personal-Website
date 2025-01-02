@@ -56,7 +56,7 @@ body, .list {
 }
 
 .button {
-    background: #2c1810;
+    background: var(--primary);
     color: #fff4e3;
 }
 
@@ -65,7 +65,7 @@ body, .list {
 }
 
 .dark .button {
-    background: #ffffff;
+    background: var(--primary);
     color: #1f1f1f;
 }
 
