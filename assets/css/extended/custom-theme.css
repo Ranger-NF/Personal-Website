@@ -28,7 +28,15 @@
 /* Apply gradient background to body */
 body, .list {
     background: var(--theme);
+    background-image: url('../../background/topographylight.svg'), var(--theme);
+
 }
+
+.dark.list, body {
+    background: var(--theme);
+    background-image: url('../../background/topography.svg'), var(--theme);    
+}
+
 
 /* Custom element styling */
 .post-title {
