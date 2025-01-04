@@ -29,7 +29,6 @@
 body, .list {
     background: var(--theme);
     background-image: url('../../background/topographylight.svg'), var(--theme);
-
 }
 
 .dark.list, body {
