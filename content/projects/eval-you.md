@@ -2,6 +2,7 @@
 title: "🔍 Eval You"
 date: 2024-09-03T09:39:00+05:30
 summary: Minimalistic android app to keep track of your academics.
+githubLink: https://github.com/Ranger-NF/Eval-You
 author: Ranger
 ---
 

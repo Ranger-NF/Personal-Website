@@ -3,6 +3,8 @@ title: "🚀 BlastOff"
 date: 2024-09-03T09:41:00+05:30
 summary: "BlastOff is a casual endless runner game featuring vector graphics"
 author: Ranger
+githubLink: https://github.com/Ranger-NF/BlastOff
+externalLink: https://https://ranger-nf.itch.io/blastoff
 cover:
     image: "images/projects/blastoff-title.svg"
 ---

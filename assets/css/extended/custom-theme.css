@@ -189,3 +189,26 @@ blockquote {
 .profile .profile_inner h1 {
     padding: 8px 0;
 }
+
+.project-top {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.project-link {
+    display: flex;
+}
+
+.project-cover img {
+    height: 8rem;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+}
