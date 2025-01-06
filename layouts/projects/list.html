@@ -52,9 +52,11 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
+
+<div class="projects-list">
 {{- range $index, $page := $paginator.Pages }}
 
-{{- $class := "post-entry" }}
+{{- $class := "project-post-entry" }}
 
 {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
 {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
@@ -76,11 +78,11 @@
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
   </div>
   {{- end }}
-
-
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
 {{- end }}
+
+</div>
 
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer">

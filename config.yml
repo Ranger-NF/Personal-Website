@@ -40,7 +40,7 @@ params:
 
   cover:
     hiddenInList: true
-    hiddenInProjectList: true
+    hiddenInProjectList: false
 
   profileMode:
     enabled: true
