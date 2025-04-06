@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+    --main: #f2f2f2;
+    --text: #151515;
+    --tertiary: #fb6234;
+
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: var(--text);
+    background-color: var(--main);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: var(--text);
+        background-color: var(--main);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("noodle.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
