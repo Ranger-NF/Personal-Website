@@ -1,11 +1,12 @@
-import { IconMenu } from "@tabler/icons-react";
 import "./App.css";
 import NavLinks from "./components/navLinks";
 import Tagline from "./components/tagline";
+import PageDirectButton from "./components/pageDirects";
+import MobileMenu from "./components/mobileMenu";
 
 function App() {
   return (
-    <div className="grid grid-rows-3 m-5 w-full">
+    <div className="grid grid-rows-3 m-8 w-full">
       <video
         autoPlay
         muted
@@ -17,7 +18,15 @@ function App() {
 
       <div className="flex flex-row justify-between">
         <img src="logo.png" width={50} height={50} className="h-12 w-12" />
-        <IconMenu className="md:hidden h-6 w-6" />
+        <div className="md:hidden">
+          <MobileMenu />
+        </div>
+
+        <div className="page-directs hidden md:flex h-max items-center gap-16">
+          <a>about</a>
+          <a>linkedin</a>
+          <PageDirectButton text="follow" />
+        </div>
       </div>
 
       {/* Mobile view */}

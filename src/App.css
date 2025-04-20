@@ -33,6 +33,14 @@
     font-size: 3em;
 }
 
+.page-directs {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.page-direct-button {
+}
+
 @media only screen and (max-width: 600px) {
     .main-contents {
         line-height: 1.3;
