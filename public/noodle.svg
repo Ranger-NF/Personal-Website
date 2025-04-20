@@ -15,30 +15,30 @@
     <linearGradient
        id="linearGradient25">
       <stop
-         style="stop-color:#cdb66c;stop-opacity:1;"
+         style="stop-color:#b99d3a;stop-opacity:1;"
          offset="0"
          id="stop25" />
       <stop
-         style="stop-color:#e0d3a0;stop-opacity:1;"
-         offset="0.95053476"
+         style="stop-color:#e5daa3;stop-opacity:1;"
+         offset="0.73163188"
          id="stop26" />
     </linearGradient>
     <linearGradient
        xlink:href="#linearGradient25"
        id="linearGradient26"
-       x1="131.77397"
-       y1="382.56964"
-       x2="300.38803"
-       y2="175.69864"
+       x1="-19.296642"
+       y1="335.36008"
+       x2="233.22983"
+       y2="97.123856"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        xlink:href="#linearGradient25"
        id="linearGradient2"
        gradientUnits="userSpaceOnUse"
-       x1="131.77397"
-       y1="382.56964"
-       x2="300.38803"
-       y2="175.69864" />
+       x1="-19.296642"
+       y1="335.36008"
+       x2="233.22983"
+       y2="97.123856" />
   </defs>
   <g
      id="g1">

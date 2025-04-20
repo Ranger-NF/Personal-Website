@@ -18,7 +18,7 @@ function App() {
 
       <div className="flex flex-row justify-between">
         <img src="logo.png" width={50} height={50} className="h-12 w-12" />
-        <div className="md:hidden">
+        <div className="md:hidden p-3">
           <MobileMenu />
         </div>
 
