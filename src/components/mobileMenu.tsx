@@ -34,7 +34,7 @@ const MobileMenu: React.FC = () => {
             <NavLinks
               indexNum="01"
               text="LinkedIn"
-              link="www.linkedin.com/in/just-fahad/"
+              link="https://linkedin.com/in/just-fahad/"
             />
             <NavLinks
               indexNum="02"
