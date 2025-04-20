@@ -23,9 +23,9 @@ function App() {
         </div>
 
         <div className="page-directs hidden md:flex h-max items-center gap-16">
-          <a>about</a>
-          <a>linkedin</a>
-          <PageDirectButton text="follow" />
+          {/* <a>about</a> */}
+          <a href="www.linkedin.com/in/just-fahad/">linkedin</a>
+          <PageDirectButton text="github" link="https://github.com/Ranger-NF" />
         </div>
       </div>
 
@@ -73,7 +73,7 @@ function App() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-end gap-3">
+      {/* <div className="flex flex-col justify-end gap-3">
         <NavLinks
           indexNum="01"
           text="Projects"
@@ -89,8 +89,8 @@ function App() {
           text="Links"
           link="https://foss.gecskp.ac.in/"
         />
-      </div>
-      <div className="flex justify-center pt-6 font-light text-xs">
+      </div> */}
+      <div className="flex justify-center pt-6 font-light text-xs items-end">
         MADE WITH 💭 BY FAHAD
       </div>
     </div>
