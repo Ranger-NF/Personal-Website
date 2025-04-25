@@ -3,6 +3,7 @@ import NavLinks from "./components/navLinks";
 import Tagline from "./components/tagline";
 import PageDirectButton from "./components/pageDirects";
 import MobileMenu from "./components/mobileMenu";
+import TextTransition from "./components/transitionText";
 
 function App() {
   return (
@@ -46,8 +47,8 @@ function App() {
       {/* Laptop view */}
       <div className="main-content hidden md:block max-w-6xl mx-auto">
         {/* Top row */}
-        <div className="flex items-center">
-          <h1 className="name-role-text mr-4">MOHAMMED FAHAD</h1>
+        <div className="flex items-center gap-4">
+          <TextTransition styleName="name-role-text" text="MOHAMMED FAHAD" />
           <div className="flex items-center">
             <Tagline text="BASED IN KERALA, INDIA" />
           </div>
@@ -66,14 +67,22 @@ function App() {
           {/* Right column */}
           <div className="w-3/5 lap-content ">
             <div className="whitespace-nowrap">
-              <p className="adjective">THOUGHT-DRIVEN</p>
+              <TextTransition
+                styleName="adjective"
+                text="THOUGHT-DRIVEN"
+                delay={400}
+              />
             </div>
-            <p className="name-role-text">DEVELOPER.</p>
+            <TextTransition
+              styleName="name-role-text"
+              text="DEVELOPER."
+              delay={400}
+            />
           </div>
         </div>
       </div>
 
-      {/* <div className="flex flex-col justify-end gap-3">
+      <div className="hidden flex-col justify-end gap-3">
         <NavLinks
           indexNum="01"
           text="Projects"
@@ -89,7 +98,7 @@ function App() {
           text="Links"
           link="https://foss.gecskp.ac.in/"
         />
-      </div> */}
+      </div>
       <div className="flex justify-center pt-6 font-light text-xs items-end">
         MADE WITH 💭 BY FAHAD
       </div>
