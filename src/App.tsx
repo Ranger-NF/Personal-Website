@@ -35,16 +35,8 @@ function App() {
         <Tagline text="BASED IN KERALA, INDIA" />
         <div className="main-contents gap-2 pt-3 pb-3">
           <TextTransition styleName="name-role-text" text="M. FAHAD" />
-          <TextTransition
-            styleName="adjective"
-            text="THOUGHT-DRIVEN"
-            delay={400}
-          />
-          <TextTransition
-            styleName="name-role-text"
-            text="DEVELOPER."
-            delay={400}
-          />
+          <TextTransition styleName="adjective" text="THOUGHT-DRIVEN" />
+          <TextTransition styleName="name-role-text" text="DEVELOPER." />
         </div>
         <div className="flex flex-col gap-3">
           <Tagline text="B.TECH CSE STUDENT" />
