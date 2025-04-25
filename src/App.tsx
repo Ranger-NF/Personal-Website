@@ -40,12 +40,11 @@ function App() {
             text="THOUGHT-DRIVEN"
             delay={400}
           />
-        </div>
-        <TextTransition
-          styleName="name-role-text"
-          text="DEVELOPER."
-          delay={400}
-        />
+          <TextTransition
+            styleName="name-role-text"
+            text="DEVELOPER."
+            delay={400}
+          />
         </div>
         <div className="flex flex-col gap-3">
           <Tagline text="B.TECH CSE STUDENT" />
