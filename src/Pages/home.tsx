@@ -44,7 +44,7 @@ function HomePage() {
       </div>
 
       {/* Laptop view */}
-      <div className="main-content hidden md:block max-w-6xl mx-auto">
+      <div className="main-content hidden md:block mx-auto">
         {/* Top row */}
         <div className="flex items-center gap-4">
           <TextTransition styleName="name-role-text" text="MOHAMMED FAHAD" />
