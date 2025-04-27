@@ -1,4 +1,5 @@
 #root {
+    font-family: "IBM Plex Sans", sans-serif;
     display: flex;
     height: 100vh;
     width: 100%;
@@ -13,6 +14,7 @@
 }
 
 .tagline {
+    font-family: "IBM Plex Sans", sans-serif;
     line-height: 2;
     font-size: 1.1em;
 }
@@ -22,15 +24,18 @@
 }
 
 .name-role-text {
-    font-weight: bold;
-    font-size: 3em;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 4em;
     color: var(--text);
+    letter-spacing: 2px;
 }
 
 .adjective {
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     color: var(--tertiary);
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .page-directs {
@@ -47,17 +52,23 @@
     }
     .name-role-text {
         font-weight: bold;
-        font-size: 2em;
+        font-size: 2.1em;
         color: var(--text);
+        letter-spacing: 2px;
     }
 
     .adjective {
         font-style: italic;
         color: var(--tertiary);
-        font-size: 2em;
+        font-size: 2.1em;
     }
 
     .navlinks {
         font-size: 2em;
+    }
+
+    .tagline {
+        line-height: 1;
+        font-size: 1.1em;
     }
 }

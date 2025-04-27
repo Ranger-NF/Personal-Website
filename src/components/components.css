@@ -1,0 +1,9 @@
+.project-num {
+    font-weight: normal;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.project-name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2.5em;
+}

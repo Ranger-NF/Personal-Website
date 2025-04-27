@@ -1,48 +1,46 @@
-import { motion } from "motion/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface TextTransitionProps {
   text: string;
   styleName: string;
   delay?: number;
+  typingSpeed?: number;
 }
 
 const TextTransition: React.FC<TextTransitionProps> = ({
   text,
   styleName,
   delay = 0,
+  typingSpeed = 50, // ms per character
 }) => {
-  const [characters, setCharacters] = useState<string[]>([]);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
 
-  setTimeout(() => setCharacters(text.split("")), delay);
+  useEffect(() => {
+    const initialTimer = setTimeout(() => {
+      setIsTyping(true);
+    }, delay);
+
+    return () => clearTimeout(initialTimer);
+  }, [delay]);
+
+  // Handle the typing effect
+  useEffect(() => {
+    if (!isTyping) return;
+
+    if (displayedText.length < text.length) {
+      const timer = setTimeout(() => {
+        setDisplayedText(text.substring(0, displayedText.length + 1));
+      }, typingSpeed);
+      return () => clearTimeout(timer);
+    } else {
+      setIsTyping(false);
+    }
+  }, [displayedText, isTyping, text, typingSpeed]);
 
   return (
-    <div>
-      {characters.map((char, index) => (
-        <motion.span
-          className={styleName}
-          key={`char-${index}`}
-          initial={{
-            opacity: 0,
-            y: 20,
-            scale: 0.5,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-            scale: 1,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 10,
-            mass: 0.8,
-            delay: index * 0.05, // Add delay based on character position
-          }}
-        >
-          {char === " " ? "\u00A0" : char}
-        </motion.span>
-      ))}
+    <div className="relative inline-flex">
+      <div className={styleName}>{displayedText}</div>
     </div>
   );
 };

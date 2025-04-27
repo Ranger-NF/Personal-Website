@@ -7,14 +7,14 @@ interface TaglineProp {
 
 const Tagline: React.FC<TaglineProp> = ({ text }) => {
   const characters = text.split("");
-  const delay = 0.7;
+  const delay = 1;
 
   return (
     <div className="tagline overflow-hidden">
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: delay, duration: 0.2 }}
+        transition={{ delay: delay, duration: 0.6 }}
         className="text-[var(--tertiary)] font-bold"
       >
         {"/  "}
@@ -27,7 +27,7 @@ const Tagline: React.FC<TaglineProp> = ({ text }) => {
             initial={{ y: "100%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1 }}
             transition={{
-              duration: 0.3,
+              duration: 0.5,
               delay: delay,
             }}
           >
