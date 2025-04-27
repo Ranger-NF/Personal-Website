@@ -1,4 +1,4 @@
-import NavLinks from "../components/navLinks";
+// import NavLinks from "../components/navLinks";
 import Tagline from "../components/tagline";
 import PageDirectButton from "../components/pageDirects";
 import MobileMenu from "../components/mobileMenu";
@@ -12,7 +12,7 @@ function HomePage() {
         muted
         loop
         id="myVideo"
-        className="hidden md:block md:fixed right-0 bottom-0 min-w-full min-h-full -z-5"
+        className="hidden md:block md:fixed right-0 top-0 min-w-full min-h-full -z-5"
         src="noodle.webm"
       />
 
