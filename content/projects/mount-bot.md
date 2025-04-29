@@ -1,6 +1,7 @@
 ---
-title: "🗻 Mount Bot"
+title: "Mount Bot"
 date: 2024-09-03T09:40:00+05:30
+tags: ["Discord.js", "bot"]
 summary: A discord bot made for entertainment purposes.
 githubLink: https://github.com/Ranger-NF/Mount-JS
 author: Ranger

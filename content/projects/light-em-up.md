@@ -1,7 +1,8 @@
 ---
-title: "🪩 Light 'Em Up"
+title: "Light 'Em Up"
 date: 2024-11-19T07:50:00+05:30
 summary: "NodeMCU based Whack-A-Mole!"
+tags: ["game", "hardware"]
 author: Fahad
 githubLink: https://github.com/Ranger-NF/light-em-up
 cover:

@@ -1,6 +1,7 @@
 ---
-title: "🧮 Shell Calc"
+title: "Shell Calc"
 date: 2024-11-19T07:50:00+05:30
+tags: ["Terminal", "Python"]
 summary: "Simple calculator served in terminal user interface"
 author: Fahad
 githubLink: https://github.com/Ranger-NF/shell-calc

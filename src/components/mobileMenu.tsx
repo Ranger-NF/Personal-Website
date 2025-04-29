@@ -6,8 +6,7 @@ const MobileMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div>
-      {/* Menu Icon - always present but hidden when menu is open */}
+    <div className="z-10">
       <IconMenu
         className={`md:hidden h-6 w-6 cursor-pointer transition-opacity duration-300 ${
           isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
@@ -41,6 +40,7 @@ const MobileMenu: React.FC = () => {
               text="Github"
               link="https://github.com/Ranger-NF"
             />
+            <NavLinks indexNum="03" text="Projects" link="/projects" />
           </div>
         </div>
       </div>

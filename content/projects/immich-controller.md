@@ -1,6 +1,7 @@
 ---
-title: "📦 Immich controller"
+title: "Immich controller"
 date: 2024-09-03T09:35:00+05:30
+tags: ["linux", "extension"]
 summary: A Gnome 43 extension to control immich docker containers using buttons on desktop's top bar
 githubLink: https://github.com/Ranger-NF/immich-controller
 author: Ranger

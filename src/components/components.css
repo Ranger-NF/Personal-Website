@@ -1,3 +1,4 @@
+.project-tags,
 .project-num {
     font-weight: normal;
     font-family: "IBM Plex Sans", sans-serif;
@@ -5,5 +6,15 @@
 
 .project-name {
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 2.5em;
+    font-size: 2.3em;
+}
+
+@media only screen and (max-width: 600px) {
+    .project-tags,
+    .project-num {
+        font-size: 0.8em;
+    }
+    .project-name {
+        font-size: 1.8em;
+    }
 }

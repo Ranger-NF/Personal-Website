@@ -1,0 +1,17 @@
+.project-page-tags,
+.project-page-num {
+    font-weight: normal;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.project-page-name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 3em;
+}
+
+.project-page-summary {
+    max-width: 300px;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: "IBM Plex Sans", sans-serif;
+}

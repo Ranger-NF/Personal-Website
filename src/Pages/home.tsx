@@ -1,4 +1,4 @@
-// import NavLinks from "../components/navLinks";
+import NavLinks from "../components/navLinks";
 import Tagline from "../components/tagline";
 import PageDirectButton from "../components/pageDirects";
 import MobileMenu from "../components/mobileMenu";
@@ -83,7 +83,7 @@ function HomePage() {
 
       <div className="flex justify-center md:justify-between">
         <div className="hidden md:flex flex-col justify-end gap-3">
-          {/* <NavLinks indexNum="01" text="Projects" link="/projects" /> */}
+          <NavLinks indexNum="01" text="Projects" link="/projects" />
         </div>
         <div className="flex justify-center pt-6 font-light text-xs items-end">
           MADE WITH 💭 BY FAHAD
