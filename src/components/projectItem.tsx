@@ -50,10 +50,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
               PROJECT /{indexNum}
             </div>
             <div className="project-tags flex justify-end">
-              {projectTags?.map((tag) => {
+              {projectTags?.map((tag, index) => {
                 return (
                   <div className="project-tag text-[var(--tertiary)] ">
-                    {tag.toUpperCase()}
+                    {tag.toUpperCase()} {index == tagCount - 1 ? " " : "•"}
                   </div>
                 );
               })}
