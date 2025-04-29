@@ -29,18 +29,20 @@ const MobileMenu: React.FC = () => {
               onClick={() => setIsOpen(false)}
             />
           </div>
-          <div className="flex flex-col mt-16 space-y-8">
-            <NavLinks
-              indexNum="01"
-              text="LinkedIn"
-              link="https://linkedin.com/in/just-fahad/"
-            />
-            <NavLinks
-              indexNum="02"
-              text="Github"
-              link="https://github.com/Ranger-NF"
-            />
-            <NavLinks indexNum="03" text="Projects" link="/projects" />
+          <div className="flex flex-col h-full justify-center items-center">
+            <div className="text-center space-y-8">
+              <NavLinks
+                indexNum="01"
+                text="LinkedIn"
+                link="https://linkedin.com/in/just-fahad/"
+              />
+              <NavLinks
+                indexNum="02"
+                text="Github"
+                link="https://github.com/Ranger-NF"
+              />
+              <NavLinks indexNum="03" text="Projects" link="/projects" />
+            </div>
           </div>
         </div>
       </div>

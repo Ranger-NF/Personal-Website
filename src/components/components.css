@@ -9,12 +9,20 @@
     font-size: 2.3em;
 }
 
+.navlinks {
+    font-size: 1.25em;
+}
+
 @media only screen and (max-width: 600px) {
     .project-tags,
     .project-num {
         font-size: 0.8em;
     }
     .project-name {
+        font-size: 1.8em;
+    }
+
+    .navlinks {
         font-size: 1.8em;
     }
 }

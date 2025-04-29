@@ -39,7 +39,7 @@ const TextTransition: React.FC<TextTransitionProps> = ({
   }, [displayedText, isTyping, text, typingSpeed]);
 
   return (
-    <div className="relative inline-flex">
+    <div className="inline-flex">
       <div className={styleName}>{displayedText}</div>
     </div>
   );
