@@ -52,7 +52,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             <div className="project-tags flex justify-end">
               {projectTags?.map((tag, index) => {
                 return (
-                  <div className="project-tag text-[var(--tertiary)] ">
+                  <div className="project-tag text-[var(--tertiary)] gap-1">
                     {tag.toUpperCase()} {index == tagCount - 1 ? " " : "•"}
                   </div>
                 );
