@@ -1,12 +1,10 @@
 import NavLinks from "../components/navLinks";
 import Tagline from "../components/tagline";
-import PageDirectButton from "../components/pageDirects";
-import MobileMenu from "../components/mobileMenu";
 import TextTransition from "../components/transitionText";
 
 function HomePage() {
   return (
-    <div className="grid grid-rows-3 m-8 w-full">
+    <div className="grid m-8">
       <video
         autoPlay
         muted
@@ -15,19 +13,6 @@ function HomePage() {
         className="hidden md:block md:fixed right-0 top-0 min-w-full min-h-full -z-5"
         src="noodle.webm"
       />
-
-      <div className="flex flex-row justify-between">
-        <img src="logo.png" width={50} height={50} className="h-12 w-12" />
-        <div className="md:hidden p-3">
-          <MobileMenu />
-        </div>
-
-        <div className="page-directs hidden md:flex h-max items-center gap-16">
-          {/* <a>about</a> */}
-          <a href="www.linkedin.com/in/just-fahad/">linkedin</a>
-          <PageDirectButton text="github" link="https://github.com/Ranger-NF" />
-        </div>
-      </div>
 
       {/* Mobile view */}
       <div className="flex md:hidden flex-col">
@@ -85,7 +70,7 @@ function HomePage() {
         <div className="hidden md:flex flex-col justify-end gap-3">
           <NavLinks indexNum="01" text="Projects" link="/projects" />
         </div>
-        <div className="flex justify-center pt-6 font-light text-xs items-end">
+        <div className="flex justify-center font-light text-xs items-end">
           MADE WITH 💭 BY FAHAD
         </div>
       </div>

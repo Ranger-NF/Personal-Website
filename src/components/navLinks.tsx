@@ -1,5 +1,6 @@
 import { IconArrowDownRight } from "@tabler/icons-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface NavLinksProp {
   indexNum: string;
@@ -9,7 +10,7 @@ interface NavLinksProp {
 
 const NavLinks: React.FC<NavLinksProp> = ({ indexNum, text, link }) => {
   return (
-    <a className="navlinks group flex gap-3 text-center" href={link}>
+    <Link className="navlinks group flex gap-3 text-center" to={link}>
       <span className="text-[var(--tertiary)] font-bold group-hover:scale-105 transition">
         {indexNum}
       </span>
@@ -17,7 +18,7 @@ const NavLinks: React.FC<NavLinksProp> = ({ indexNum, text, link }) => {
         {text}
       </span>
       <IconArrowDownRight className="font-semibold group-hover:-rotate-45 transition" />
-    </a>
+    </Link>
   );
 };
 
