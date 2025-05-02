@@ -12,7 +12,9 @@ const PageDirectButton: React.FC<PageDirectButtonProp> = ({
 }) => {
   return (
     <div className="page-direct-button group flex flex-row justify-center h-max p-2 hover:bg-black hover:text-white border border-black rounded-4xl transition">
-      <a href={link}>{text}</a>
+      <a className="nav-bar-item px-1" href={link}>
+        {text}
+      </a>
       <IconArrowDownRight className="font-semibold group-hover:-rotate-45 transition" />
     </div>
   );

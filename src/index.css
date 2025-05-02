@@ -3,7 +3,7 @@
 :root {
     --main: #f2f2f2;
     --text: #151515;
-    --tertiary: #fb6234;
+    --tertiary: #d87739;
 
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -30,7 +30,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     body {
         background-image: url("noodle.svg");
         background-repeat: no-repeat;

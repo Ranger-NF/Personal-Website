@@ -9,6 +9,7 @@ import HomePage from "./Pages/home";
 import ProjectsListPage from "./Pages/projectsList";
 import ProjectPage from "./Pages/project";
 import Layout from "./components/layout";
+import AboutPage from "./Pages/about";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<HomePage />} />
       <Route path="/projects" element={<ProjectsListPage />} />
       <Route path="/project/:slug" element={<ProjectPage />} />
+      <Route path="/about" element={<AboutPage />} />
     </Route>,
   ),
 );

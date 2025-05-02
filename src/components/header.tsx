@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   }, [location]);
 
   return (
-    <div className="flex group flex-row justify-between m-8">
+    <div className="flex flex-row justify-between m-6">
       <AnimatePresence>
         {!isHomePage && (
           <div className="flex justify-start pt-1">
@@ -35,8 +35,12 @@ const Header: React.FC = () => {
       </div>
 
       <div className="page-directs hidden md:flex h-max items-center gap-16">
-        {/* <a>about</a> */}
-        <a href="www.linkedin.com/in/just-fahad/">linkedin</a>
+        <Link className="nav-bar-item" to="/about">
+          about
+        </Link>
+        <a className="nav-bar-item" href="www.linkedin.com/in/just-fahad/">
+          linkedin
+        </a>
         <PageDirectButton text="github" link="https://github.com/Ranger-NF" />
       </div>
     </div>

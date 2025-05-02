@@ -1,3 +1,5 @@
+import "./page.css";
+
 import NavLinks from "../components/navLinks";
 import Tagline from "../components/tagline";
 import TextTransition from "../components/transitionText";

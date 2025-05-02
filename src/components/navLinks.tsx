@@ -10,14 +10,15 @@ interface NavLinksProp {
 
 const NavLinks: React.FC<NavLinksProp> = ({ indexNum, text, link }) => {
   return (
-    <Link className="navlinks group flex gap-3 text-center" to={link}>
-      <span className="text-[var(--tertiary)] font-bold group-hover:scale-105 transition">
-        {indexNum}
-      </span>
-      <span className="text-[var(--text)] font-semibold group-hover:scale-105 transition">
+    <Link
+      className="navlinks group hover:translate-x-4 flex gap-3 text-center items-center transition"
+      to={link}
+    >
+      <span className="text-[var(--tertiary)] font-bold">{indexNum}</span>
+      <span className="text-[var(--text)] font-semibold transition">
         {text}
       </span>
-      <IconArrowDownRight className="font-semibold group-hover:-rotate-45 transition" />
+      <IconArrowDownRight className="font-semibold group-hover:-rotate-45 group-hover:bg-[var(--tertiary))] group-hover:text-[var(--main))] rounded-4xl transition" />
     </Link>
   );
 };
