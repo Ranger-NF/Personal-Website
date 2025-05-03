@@ -20,20 +20,13 @@
 
 body {
     min-width: 320px;
-    min-height: 100vh;
+    min-height: 100vh; /* Fallback */
+    min-height: 100dvh;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         color: var(--text);
         background-color: var(--main);
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    body {
-        background-image: url("noodle.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }

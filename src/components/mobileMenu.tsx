@@ -1,9 +1,35 @@
 import { IconMenu, IconX } from "@tabler/icons-react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavLinks from "./navLinks";
 
 const MobileMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [windowHeight, setWindowHeight] = useState<number>(0);
+
+  // Set the real viewport height
+  useEffect(() => {
+    const updateHeight = () => {
+      setWindowHeight(window.innerHeight);
+    };
+
+    // Set height initially
+    updateHeight();
+
+    // Update height on resize and orientation change
+    window.addEventListener("resize", updateHeight);
+    window.addEventListener("orientationchange", updateHeight);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+      window.removeEventListener("orientationchange", updateHeight);
+    };
+  }, []);
+
+  // Close mobile menu when a link is clicked
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className="z-10">
@@ -13,10 +39,10 @@ const MobileMenu: React.FC = () => {
         }`}
         onClick={() => setIsOpen(true)}
       />
-
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed top-0 left-0 h-screen w-screen bg-[var(--main)] transition-all duration-300 ease-in-out ${
+        style={{ height: windowHeight ? `${windowHeight}px` : "100vh" }}
+        className={`fixed top-0 left-0 w-screen bg-[var(--main)] transition-all duration-300 ease-in-out ${
           isOpen
             ? "opacity-100 translate-x-0"
             : "opacity-0 translate-x-full pointer-events-none"
@@ -33,15 +59,28 @@ const MobileMenu: React.FC = () => {
             <div className="text-center space-y-8">
               <NavLinks
                 indexNum="01"
-                text="LinkedIn"
-                link="https://linkedin.com/in/just-fahad/"
+                text="About"
+                link="/about"
+                onClick={handleLinkClick}
               />
               <NavLinks
                 indexNum="02"
+                text="LinkedIn"
+                link="https://linkedin.com/in/just-fahad/"
+                onClick={handleLinkClick}
+              />
+              <NavLinks
+                indexNum="03"
                 text="Github"
                 link="https://github.com/Ranger-NF"
+                onClick={handleLinkClick}
               />
-              <NavLinks indexNum="03" text="Projects" link="/projects" />
+              <NavLinks
+                indexNum="04"
+                text="Projects"
+                link="/projects"
+                onClick={handleLinkClick}
+              />
             </div>
           </div>
         </div>

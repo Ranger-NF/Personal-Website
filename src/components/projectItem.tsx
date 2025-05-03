@@ -64,9 +64,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             <div className="project-name text-[var(--text)] group-hover:scale-105 transition ">
               {projectName.toUpperCase()} .
             </div>
-            <div className="flex justify-end pt-1">
-              {/* <IconArrowRight className="text-[var(--tertiary)] w-10 h-10 group-hover:scale-105" /> */}
-            </div>
           </div>
         </div>
       </a>

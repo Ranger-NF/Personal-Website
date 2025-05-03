@@ -2,6 +2,7 @@
     font-family: "IBM Plex Sans", sans-serif;
     display: flex;
     height: 100vh;
+    height: 100dvh;
     width: 100%;
 }
 

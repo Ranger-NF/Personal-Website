@@ -6,13 +6,20 @@ interface NavLinksProp {
   indexNum: string;
   text: string;
   link: string;
+  onClick?: () => void;
 }
 
-const NavLinks: React.FC<NavLinksProp> = ({ indexNum, text, link }) => {
+const NavLinks: React.FC<NavLinksProp> = ({
+  indexNum,
+  text,
+  link,
+  onClick,
+}) => {
   return (
     <Link
       className="navlinks group hover:translate-x-4 flex gap-3 text-center items-center transition"
       to={link}
+      onClick={onClick}
     >
       <span className="text-[var(--tertiary)] font-bold">{indexNum}</span>
       <span className="text-[var(--text)] font-semibold transition">

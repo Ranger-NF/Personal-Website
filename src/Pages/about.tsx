@@ -1,11 +1,11 @@
 function AboutPage() {
   return (
-    <div className="grid grid-cols-[1.5fr_1fr]  m-8">
+    <div className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-[1.5fr_1fr] m-8">
       <div className="gap-6">
         <h1 className="about-head">
           A little bit <span className="about-me">about me .</span>
         </h1>
-        <p className="pt-6 mr-48">
+        <p className="pt-6 md:mr-48">
           I’m a student currently pursuing a bachelors in computer science &
           engineering at GEC Palakkad. I’m a self taught developer who loves to
           build things that actually matters!

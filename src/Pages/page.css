@@ -31,9 +31,6 @@
     font-weight: bold;
 }
 
-.page-direct-button {
-}
-
 .name-role-text {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
@@ -96,5 +93,10 @@
     .tagline {
         line-height: 1;
         font-size: 1.1em;
+    }
+
+    .about-head {
+        font-size: 2em;
+        color: var(--text);
     }
 }
