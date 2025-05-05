@@ -38,7 +38,11 @@ const Header: React.FC = () => {
         <Link className="nav-bar-item" to="/about">
           about
         </Link>
-        <a className="nav-bar-item" href="www.linkedin.com/in/just-fahad/">
+        <a
+          className="nav-bar-item"
+          target="_blank"
+          href="https://linkedin.com/in/just-fahad/"
+        >
           linkedin
         </a>
         <PageDirectButton text="github" link="https://github.com/Ranger-NF" />
