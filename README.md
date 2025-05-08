@@ -1,5 +1,5 @@
 <p align="center">
-<img class="rounded-circle" src="public/logo.png" width="50" height="auto" title="The Breakthrough logo">
+<img class="rounded-circle" src="public/logo.svg" width="50" height="auto" title="The Favicon">
 </p>
 
 <p align="center" style="font-size: 14px;">A personal Portfolio / Blogging website</p>
