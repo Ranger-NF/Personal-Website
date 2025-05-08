@@ -7,8 +7,7 @@ interface TaglineProp {
 
 const Tagline: React.FC<TaglineProp> = ({ text }) => {
   const characters = text.split("");
-  const delay = 1;
-
+  const delay = 1.5;
   return (
     <div className="tagline overflow-hidden">
       <motion.span

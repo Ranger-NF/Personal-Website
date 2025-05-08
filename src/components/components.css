@@ -13,6 +13,25 @@
     font-size: 1.25em;
 }
 
+.text-transition-wrapper {
+    display: inline-flex;
+    font-family: inherit; /* Inherits parent font */
+}
+
+.transition-character {
+    display: inline-block;
+    min-width: 0.5em;
+    transition: opacity 0.2s;
+}
+
+.transition-character.visible {
+    opacity: 1;
+}
+
+.transition-character.hidden {
+    opacity: 0;
+}
+
 @media only screen and (max-width: 768px) {
     .project-tags,
     .project-num {
