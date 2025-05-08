@@ -4,13 +4,19 @@ import PageDirectButton from "./pageDirects";
 import { Link, useLocation } from "react-router-dom";
 import { IconArrowLeft } from "@tabler/icons-react";
 import { AnimatePresence } from "motion/react";
+import { usePathHistory } from "../contexts/pathHistoryContext";
 
 const Header: React.FC = () => {
   const [isHomePage, setIsHomePage] = useState<boolean>(true);
+  const { pathHistory } = usePathHistory();
+
+  // Get the second-to-last path (last one is current)
+  const previousPath = pathHistory[pathHistory.length - 2] || "/";
 
   const location = useLocation();
 
   useEffect(() => {
+    console.log(previousPath);
     if (location.pathname == "/") {
       if (!isHomePage) setIsHomePage(true);
     } else {
@@ -23,13 +29,19 @@ const Header: React.FC = () => {
       <AnimatePresence>
         {!isHomePage && (
           <div className="flex justify-start pt-1">
-            <Link to="/">
+            <Link to={previousPath}>
               <IconArrowLeft className="text-[var(--tertiary)] w-10 h-10 group-hover:scale-105" />
             </Link>
           </div>
         )}
       </AnimatePresence>
-      <img src="/logo.svg" width={50} height={50} className="h-12 w-12" />
+
+      <img
+        src="/logo.svg"
+        width={50}
+        height={50}
+        className={`${!isHomePage && "absolute left-[50%]"} h-12 w-12`}
+      />
       <div className="md:hidden p-3">
         <MobileMenu />
       </div>

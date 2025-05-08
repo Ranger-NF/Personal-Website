@@ -1,3 +1,4 @@
+import { IconArrowRight } from "@tabler/icons-react";
 import "./components.css";
 // import { IconArrowRight } from "@tabler/icons-react";
 import React from "react";
@@ -13,13 +14,13 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   indexNum,
   projectName,
   projectTags = [],
-  // slug,
+  slug,
 }) => {
   const tagCount = projectTags?.length;
 
   return (
     <div className="flex flex-col">
-      <a className="group items-center py-4">
+      <a href={"project/" + slug} className="group items-center py-4">
         {/* desktop view */}
         <div className="hidden md:grid md:grid-cols-[0.5fr_1.5fr_1fr_0.5fr] items-center">
           <div className="project-num text-[var(--tertiary)] transition">
@@ -38,7 +39,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             })}
           </div>
           <div className="flex justify-end p-4">
-            {/* <IconArrowRight className="text-[var(--tertiary)] w-10 h-10 group-hover:scale-105" /> */}
+            <IconArrowRight className="text-[var(--tertiary)] w-10 h-10 group-hover:scale-125 transition" />
           </div>
         </div>
 

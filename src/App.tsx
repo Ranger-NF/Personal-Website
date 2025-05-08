@@ -5,11 +5,11 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import HomePage from "./Pages/home";
-import ProjectsListPage from "./Pages/projectsList";
-import ProjectPage from "./Pages/project";
+import HomePage from "./pages/home";
+import ProjectsListPage from "./pages/projectsList";
+import ProjectPage from "./pages/project";
 import Layout from "./components/layout";
-import AboutPage from "./Pages/about";
+import AboutPage from "./pages/about";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

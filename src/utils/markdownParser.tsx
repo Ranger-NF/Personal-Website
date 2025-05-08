@@ -68,7 +68,7 @@ export async function getProjectData(slug: string) {
       summary: data.summary,
       githubLink: data.githubLink || null,
       externalLink: data.externalLink || null,
-      coverImage: data.coverImage || null,
+      coverImage: data.cover?.image || null,
       content: content,
     };
   } catch (error) {
