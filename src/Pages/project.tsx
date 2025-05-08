@@ -1,7 +1,7 @@
 import "./page.css";
 
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { getProjectData } from "../utils/markdownParser";
 
 interface ProjectsDataType {
@@ -17,6 +17,7 @@ interface ProjectsDataType {
 
 const ProjectPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const path = useLocation();
   const navigate = useNavigate();
   const [project, setProject] = useState<ProjectsDataType | null>(null);
   const [loading, setLoading] = useState(true);
@@ -24,7 +25,7 @@ const ProjectPage: React.FC = () => {
   useEffect(() => {
     const loadProject = async () => {
       if (!slug) {
-        navigate("/projects");
+        navigate("/projects", { state: { from: path } });
         return;
       }
 
@@ -55,7 +56,7 @@ const ProjectPage: React.FC = () => {
   }
 
   return (
-    <div className="grid gap-12 m-8 w-full">
+    <div className="grid gap-12 m-8 ">
       {/* Content */}
       <div className="flex justify-between flex-col[1fr_2fr]">
         <div className="project-page-name">{project.title.toUpperCase()} .</div>

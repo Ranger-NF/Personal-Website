@@ -55,6 +55,7 @@ const ProjectsListPage: React.FC = () => {
         {projects.map((project, index) => (
           <motion.div key={project.slug} variants={itemVariants}>
             <ProjectItem
+              key={index}
               indexNum={(index + 1).toString().padStart(2, "0")}
               projectTags={project.tags}
               projectName={project.title}

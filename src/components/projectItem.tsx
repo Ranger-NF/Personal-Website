@@ -2,6 +2,7 @@ import { IconArrowRight } from "@tabler/icons-react";
 import "./components.css";
 // import { IconArrowRight } from "@tabler/icons-react";
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 interface ProjectItemProps {
   indexNum: string;
@@ -18,9 +19,15 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 }) => {
   const tagCount = projectTags?.length;
 
+  const path = useLocation();
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col">
-      <a href={"project/" + slug} className="group items-center py-4">
+      <div
+        onClick={() => navigate("/project/" + slug, { state: { from: path } })}
+        className="group items-center py-4"
+      >
         {/* desktop view */}
         <div className="hidden md:grid md:grid-cols-[0.5fr_1.5fr_1fr_0.5fr] items-center">
           <div className="project-num text-[var(--tertiary)] transition">
@@ -32,7 +39,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           <div className="project-tags flex justify-end gap-1">
             {projectTags?.map((tag, index) => {
               return (
-                <div className="project-tag text-[var(--tertiary)] ">
+                <div
+                  key={index}
+                  className="project-tag text-[var(--tertiary)] "
+                >
                   {tag.toUpperCase()} {index == tagCount - 1 ? " " : "•"}
                 </div>
               );
@@ -67,7 +77,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             </div>
           </div>
         </div>
-      </a>
+      </div>
       <hr className="w-full" />
     </div>
   );
