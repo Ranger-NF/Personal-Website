@@ -1,7 +1,7 @@
 ---
 title: "Eval You"
 date: 2024-09-03T09:39:00+05:30
-summary: Minimalistic android app to keep track of your academics.
+summary: 🧾 Minimalistic __android app__ to keep track of your academics built with flutter. It was a side project I was making during my preperation for competitive exams. I had to stop working on it due to time constraints.
 tags: ["flutter", "android"]
 githubLink: https://github.com/Ranger-NF/Eval-You
 author: Ranger

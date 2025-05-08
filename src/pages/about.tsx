@@ -1,6 +1,6 @@
 function AboutPage() {
   return (
-    <div className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-[1.5fr_1fr] m-8">
+    <div className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-[1.5fr_1fr] m-8 pb-10">
       <div className="gap-6">
         <h1 className="about-head">
           A little bit <span className="about-me">about me .</span>
@@ -55,7 +55,12 @@ function AboutPage() {
         </p>
       </div>
       <div className="overflow-hidden rounded-xl">
-        <img src="/fahads-photo.jpg" alt="Fahad's Photo" />
+        <img
+          src="/fahads-photo.jpg"
+          loading="lazy"
+          draggable={false}
+          alt="Fahad's Photo"
+        />
       </div>
     </div>
   );

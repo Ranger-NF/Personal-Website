@@ -2,7 +2,7 @@
 title: "Mount Bot"
 date: 2024-09-03T09:40:00+05:30
 tags: ["Discord.js", "bot"]
-summary: A discord bot made for entertainment purposes.
+summary: 🤖 A discord bot made for entertainment purposes. It is made using discord.js and sapphire.
 githubLink: https://github.com/Ranger-NF/Mount-JS
 author: Ranger
 ---

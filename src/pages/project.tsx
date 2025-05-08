@@ -45,7 +45,7 @@ const ProjectPage: React.FC = () => {
     };
 
     loadProject();
-  }, [slug, navigate]);
+  }, [slug, path]);
 
   if (loading) {
     return <div>Loading project...</div>;
@@ -57,16 +57,25 @@ const ProjectPage: React.FC = () => {
 
   return (
     <div className="grid gap-12 m-8 ">
+      {project.coverImage && (
+        <div className="flex justify-center">
+          <img loading="lazy" src={"/" + project.coverImage} className="h-48" />
+        </div>
+      )}
       {/* Content */}
-      <div className="flex justify-between flex-col[1fr_2fr]">
-        <div className="project-page-name">{project.title.toUpperCase()} .</div>
-        <div className="project-page-summary text-end">
-          {project.summary.toUpperCase()}
+      <div className="flex justify-center">
+        <div className="grid grid-cols-[2.5fr_2fr_2fr] justify-between md:max-w-6xl">
+          <div className="project-page-name">
+            {project.title.toUpperCase()} .
+          </div>
+          <div></div>
+          <div className="project-page-summary text-end">
+            {project.summary.toUpperCase()}
+          </div>
         </div>
       </div>
 
-      <hr />
-      <p>PAGE WORK IN PROGRESS</p>
+      {/* <hr /> */}
     </div>
   );
 };

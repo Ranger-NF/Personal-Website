@@ -30,7 +30,7 @@ export async function getProjectList() {
       tags: data.tags || [],
       githubLink: data.githubLink || null,
       externalLink: data.externalLink || null,
-      coverImage: data.coverImage || null,
+      coverImage: data.cover?.image || null,
     });
   }
 

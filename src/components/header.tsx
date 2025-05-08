@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MobileMenu from "./mobileMenu";
 import PageDirectButton from "./pageDirects";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { IconArrowLeft } from "@tabler/icons-react";
 import { AnimatePresence } from "motion/react";
 
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const [isHomePage, setIsHomePage] = useState<boolean>(true);
 
   const location = useLocation();
-
+  const navigate = useNavigate();
   useEffect(() => {
     if (location.pathname == "/") {
       if (!isHomePage) setIsHomePage(true);
@@ -30,12 +30,14 @@ const Header: React.FC = () => {
         )}
       </AnimatePresence>
 
-      <img
-        src="/logo.svg"
-        width={50}
-        height={50}
-        className={`${!isHomePage && "absolute left-[50%]"} h-12 w-12`}
-      />
+      <div className="flex hover:cursor-pointer" onClick={() => navigate("/")}>
+        <img
+          src="/logo.svg"
+          width={50}
+          height={50}
+          className={`${!isHomePage && "absolute left-[50%]"} h-12 w-12`}
+        />
+      </div>
       <div className="md:hidden p-3">
         <MobileMenu />
       </div>

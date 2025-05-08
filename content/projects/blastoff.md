@@ -1,7 +1,7 @@
 ---
 title: "BlastOff"
 date: 2024-09-03T09:41:00+05:30
-summary: "BlastOff is a casual endless runner game featuring vector graphics"
+summary: "🚀 BlastOff is a casual endless runner game featuring vector graphics"
 author: Ranger
 tags: ["Game", "Godot"]
 githubLink: https://github.com/Ranger-NF/BlastOff

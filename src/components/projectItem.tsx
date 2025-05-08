@@ -26,7 +26,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
     <div className="flex flex-col">
       <div
         onClick={() => navigate("/project/" + slug, { state: { from: path } })}
-        className="group items-center py-4"
+        className="group items-center py-4 hover:cursor-pointer"
       >
         {/* desktop view */}
         <div className="hidden md:grid md:grid-cols-[0.5fr_1.5fr_1fr_0.5fr] items-center">
