@@ -16,7 +16,9 @@ const Header: React.FC = () => {
   }, [location]);
 
   return (
-    <div className="fixed flex w-full p-6 z-[50] overflow-hidden bg-[var(--main)] bg- rounded-lg">
+    <div
+      className={`fixed flex w-full p-6 z-[50] overflow-hidden ${!isHomePage && "bg-[var(--main)]"} bg- rounded-lg`}
+    >
       <AnimatePresence mode="wait">
         <motion.div
           key={isHomePage.toString()}
