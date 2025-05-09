@@ -32,7 +32,7 @@ const MobileMenu: React.FC = () => {
   };
 
   return (
-    <div className="z-10">
+    <div className="z-[100]">
       <IconMenu
         className={`md:hidden h-6 w-6 cursor-pointer transition-opacity duration-300 ${
           isOpen ? "opacity-0 pointer-events-none" : "opacity-100"

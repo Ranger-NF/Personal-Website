@@ -5,7 +5,7 @@ summary: "🚀 BlastOff is a casual endless runner game featuring vector graphic
 author: Ranger
 tags: ["Game", "Godot"]
 githubLink: https://github.com/Ranger-NF/BlastOff
-externalLink: https://https://ranger-nf.itch.io/blastoff
+imagesFolder: /images/projects/blastoff/
 cover:
     image: "images/projects/blastoff-title.svg"
 ---

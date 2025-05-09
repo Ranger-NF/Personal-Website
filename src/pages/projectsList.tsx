@@ -45,7 +45,7 @@ const ProjectsListPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="grid gap-12 m-8">
+    <div className="grid gap-12 p-8 pt-20">
       <motion.div
         className="grid w-full h-full"
         variants={containerVariants}

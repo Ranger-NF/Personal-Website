@@ -5,6 +5,7 @@ tags: ["Music", "Hardware"]
 summary: "🌡️ Temperature based music player. Made using NodeMCU & Node.js"
 author: Fahad
 githubLink: https://github.com/Ranger-NF/ThaapaSakhi
+imagesFolder: /images/projects/thaapasakhi/
 cover:
     image: "images/projects/thaapasakhi-logo.svg"
 ---

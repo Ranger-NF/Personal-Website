@@ -5,6 +5,7 @@ summary: "🎰 It is a recreation of the classic arcade game: Whack-A-Mole, usin
 tags: ["game", "hardware"]
 author: Fahad
 githubLink: https://github.com/Ranger-NF/light-em-up
+imagesFolder: /images/projects/light-em-up/
 cover:
     image: "images/projects/light-em-up-logo.svg"
 ---

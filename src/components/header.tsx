@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   }, [location]);
 
   return (
-    <div className="flex flex-row justify-between m-6">
+    <div className="fixed flex w-full flex-row justify-between p-6 z-[50]">
       <AnimatePresence>
         {!isHomePage && (
           <div className="flex justify-start pt-1">
