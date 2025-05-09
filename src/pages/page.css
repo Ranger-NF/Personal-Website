@@ -100,6 +100,11 @@
         color: var(--text);
     }
 
+    .project-page-name {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 2em;
+    }
+
     .project-page-summary {
         max-width: none;
         font-weight: normal;

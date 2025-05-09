@@ -55,7 +55,11 @@ const ProjectPage: React.FC = () => {
   }, [slug, path]);
 
   if (loading) {
-    return <div>Loading project...</div>;
+    return (
+      <div className="flex min-h-screen w-full justify-center text-center pt-40">
+        <p className="text-[var(--tertiary)]">Loading project...</p>
+      </div>
+    );
   }
 
   if (!project) {
@@ -63,9 +67,9 @@ const ProjectPage: React.FC = () => {
   }
 
   return (
-    <div className="grid gap-12 p-8 max-h-dvh">
+    <div className="flex flex-col gap-6 p-4 md:p-8 min-h-screen overflow-x-hidden">
       {project.images && (
-        <div className="flex justify-center max-h-[60vh] w-full pt-30">
+        <div className="flex justify-center md:max-h-[60vh] w-full pt-30">
           <div className="w-full max-w-screen-xl">
             <Swiper
               slidesPerView="auto"
@@ -83,9 +87,13 @@ const ProjectPage: React.FC = () => {
               {project.images.length > 1
                 ? [...project.images, ...project.images, ...project.images].map(
                     (projectImg, index) => (
-                      <SwiperSlide key={index} className="!w-auto p-5">
+                      <SwiperSlide
+                        key={index}
+                        className="max-h-[40vh] md:h-full md:!w-auto p-5"
+                      >
                         <img
                           src={projectImg}
+                          loading="lazy"
                           className="h-full object-contain rounded-md shadow-lg"
                           style={{ width: "auto", height: "100%" }}
                         />
@@ -96,6 +104,7 @@ const ProjectPage: React.FC = () => {
                     <SwiperSlide key={index} className="!w-auto">
                       <img
                         src={projectImg}
+                        loading="lazy"
                         className="h-full object-contain rounded-md"
                         style={{ width: "auto", height: "100%" }}
                       />
@@ -107,7 +116,7 @@ const ProjectPage: React.FC = () => {
       )}
 
       {/* Content */}
-      <div className="flex h-fit md:justify-center">
+      <div className="flex h-fit pt-18 md:pt-0 md:justify-center">
         <div className="flex flex-col md:grid md:grid-cols-[2.5fr_2fr_2fr] text-center md:justify-between w-full md:max-w-6xl">
           <div className="project-page-name">
             {project.title.toUpperCase()} .
