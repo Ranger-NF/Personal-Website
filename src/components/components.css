@@ -53,6 +53,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .name-role-text {
+        font-weight: bold;
+        font-size: 2.1em;
+        color: var(--text);
+        letter-spacing: 2px;
+    }
+
+    .adjective {
+        font-style: italic;
+        color: var(--tertiary);
+        font-size: 2.1em;
+    }
     .project-tags,
     .project-num {
         font-size: 0.8em;
