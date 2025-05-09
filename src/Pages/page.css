@@ -6,7 +6,7 @@
 
 .project-page-name {
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 3em;
+    font-size: 2.4em;
 }
 
 .project-page-summary {
@@ -102,11 +102,11 @@
 
     .project-page-name {
         font-family: Georgia, "Times New Roman", Times, serif;
-        font-size: 2em;
+        font-size: 2.3em;
     }
 
     .project-page-summary {
-        max-width: none;
+        max-width: 90vw;
         font-weight: normal;
         font-size: 1em;
         font-family: "IBM Plex Sans", sans-serif;

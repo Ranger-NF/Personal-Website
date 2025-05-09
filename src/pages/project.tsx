@@ -9,12 +9,16 @@ import "swiper/css";
 import "swiper/css/autoplay";
 
 import { Autoplay } from "swiper/modules";
+import TextTransition from "../components/transitionText";
+
+import { motion } from "motion/react";
 
 interface ProjectsDataType {
   slug: string;
   title: string;
   date: string;
   summary: string;
+  tags: string[];
   content: string;
   githubLink: string | null;
   externalLink: string | null;
@@ -117,18 +121,37 @@ const ProjectPage: React.FC = () => {
 
       {/* Content */}
       <div className="flex h-fit pt-18 md:pt-0 md:justify-center">
-        <div className="flex flex-col md:grid md:grid-cols-[2.5fr_2fr_2fr] text-center md:justify-between w-full md:max-w-6xl">
-          <div className="project-page-name">
-            {project.title.toUpperCase()} .
+        <div className="flex flex-col gap-6 md:justify-between w-full md:max-w-6xl">
+          <div className="flex justify-between">
+            {project.tags.map((tag) => {
+              return (
+                <p className="text-[var(--tertiary)] font-light">
+                  {tag.toUpperCase()}
+                </p>
+              );
+            })}
           </div>
-          <div></div>
-          <div className="project-page-summary p-10 md:text-end">
-            {project.summary.toUpperCase()}
+          <div className="flex flex-col md:flex-row gap-6 justify-between">
+            <TextTransition
+              styleName="project-page-name text-left"
+              revealSpeed={1}
+              text={project.title.toUpperCase() + " ."}
+            />
+            <div className="flex justify-end overflow-hidden">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1, duration: 1 }}
+                className="project-page-summary text-end"
+              >
+                {project.summary.toUpperCase()}
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* <hr /> */}
+      <hr className="flex flex-col md:hidden h-full justify-end" />
     </div>
   );
 };

@@ -17,6 +17,10 @@
     display: inline-flex;
     font-family: inherit; /* Inherits parent font */
 }
+.project-page-name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2.3em;
+}
 
 .transition-character {
     display: inline-block;

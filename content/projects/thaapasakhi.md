@@ -1,8 +1,8 @@
 ---
-title: "ThaapaSakhi (താപസഖി)"
+title: "ThaapaSakhi"
 date: 2024-11-19T07:50:00+05:30
 tags: ["Music", "Hardware"]
-summary: "🌡️ Temperature based music player. Made using NodeMCU & Node.js"
+summary: "🌡️  താപസഖി: Temperature based music player. Made using NodeMCU & Node.js"
 author: Fahad
 githubLink: https://github.com/Ranger-NF/ThaapaSakhi
 imagesFolder: /images/projects/thaapasakhi/

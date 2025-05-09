@@ -33,7 +33,6 @@ export async function getProjectList() {
       githubLink: data.githubLink || null,
       externalLink: data.externalLink || null,
       coverImage: data.cover?.image || null,
-      imagesFolder: data.imagesFolder || null,
     });
   }
 
@@ -63,7 +62,7 @@ export async function getProjectData(slug: string) {
     const { data, content } = matter(fileContent);
 
     const allImages = import.meta.glob(
-      "../../public/images/projects/**/*.{webp,png,jpg,jpeg}",
+      "../assets/images/projects/**/*.{webp,png,jpg,jpeg}",
       {
         query: "?url",
         import: "default",
@@ -73,9 +72,7 @@ export async function getProjectData(slug: string) {
 
     const imageUrls = Object.entries(allImages)
       .filter(([path]) => path.includes(data.imagesFolder))
-      .map(([, url]) => url as string);
-
-    console.log(imageUrls);
+      .map(([, url]) => (url as string).replace("/public/", "/"));
 
     // Return the project data
     return {
@@ -83,6 +80,7 @@ export async function getProjectData(slug: string) {
       title: data.title,
       date: data.date,
       summary: data.summary,
+      tags: data.tags || [],
       githubLink: data.githubLink || null,
       externalLink: data.externalLink || null,
       coverImage: data.cover?.image || null,
