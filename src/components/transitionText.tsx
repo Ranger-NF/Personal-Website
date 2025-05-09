@@ -75,11 +75,11 @@ const TextTransition: React.FC<TextTransitionProps> = ({
   };
 
   return (
-    <div className={`text-transition-wrapper ${styleName}`}>
+    <div className={`text-transition-wrapper`}>
       {displayedChars.map((char, i) => (
         <span
           key={i}
-          className={`transition-character ${i <= currentIndex ? "visible" : "hidden"}`}
+          className={`transition-character ${styleName} ${i <= currentIndex ? "visible" : "hidden"}`}
           style={{
             display: "inline-block",
             minWidth: "0.5em",

@@ -13,9 +13,25 @@
     font-size: 1.25em;
 }
 
+.name-role-text {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    color: var(--text);
+    letter-spacing: 2px;
+}
+
+.adjective {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: var(--tertiary);
+    font-size: 4em;
+}
+
 .text-transition-wrapper {
     display: inline-flex;
-    font-family: inherit; /* Inherits parent font */
+    font-family: inherit;
+    font-style: inherit;
 }
 .project-page-name {
     font-family: Georgia, "Times New Roman", Times, serif;
