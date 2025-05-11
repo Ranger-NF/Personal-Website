@@ -11,7 +11,7 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import TextTransition from "../components/transitionText";
 
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import {
   IconBrandGithub,
   IconChevronDown,
@@ -68,7 +68,13 @@ const ProjectPage: React.FC = () => {
   }, [slug, path]);
 
   useEffect(() => {
-    if (showContent) scrollToElement("learn-more");
+    if (showContent) {
+      const timer = setTimeout(() => {
+        scrollToElement("learn-more");
+      }, 150);
+
+      return () => clearTimeout(timer);
+    }
   }, [showContent]);
 
   useEffect(() => {
@@ -191,7 +197,7 @@ const ProjectPage: React.FC = () => {
                 autoplay={{
                   delay: 0,
                   disableOnInteraction: false,
-                  reverseDirection: true,
+                  pauseOnMouseEnter: false,
                 }}
                 modules={[Autoplay]}
                 className="w-full h-full"
@@ -208,7 +214,6 @@ const ProjectPage: React.FC = () => {
                       >
                         <img
                           src={projectImg}
-                          loading="lazy"
                           className="h-full object-contain rounded-md shadow-lg"
                           style={{ width: "auto", height: "100%" }}
                           alt={`Project image ${index + 1}`}
@@ -219,7 +224,6 @@ const ProjectPage: React.FC = () => {
                       <SwiperSlide key={index} className="!w-auto">
                         <img
                           src={projectImg}
-                          loading="lazy"
                           className="h-full object-contain rounded-md"
                           style={{ width: "auto", height: "100%" }}
                           alt={`Project image ${index + 1}`}
@@ -230,23 +234,25 @@ const ProjectPage: React.FC = () => {
             </div>
           </motion.div>
         )}
-        {project.content && showContent && (
-          <div className="flex mt-4 justify-center">
-            <div
-              id="learn-more"
-              className="project-info flex md:max-w-6xl justify-center p-4"
+        <AnimatePresence>
+          {project.content && showContent && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              style={{ transformOrigin: "bottom", overflow: "hidden" }}
+              className="flex mt-4 justify-center"
             >
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-                className="flex flex-col gap-2"
+              <div
+                id="learn-more"
+                className="project-info flex flex-col gap-2 md:max-w-6xl justify-center p-4"
               >
                 <Markdown>{project.content}</Markdown>
-              </motion.div>
-            </div>
-          </div>
-        )}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
