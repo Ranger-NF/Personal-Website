@@ -3,6 +3,7 @@ import "./page.css";
 import NavLinks from "../components/navLinks";
 import Tagline from "../components/tagline";
 import TextTransition from "../components/transitionText";
+import PageDirectButton from "../components/pageDirects";
 
 function HomePage() {
   return (
@@ -17,17 +18,21 @@ function HomePage() {
       />
 
       {/* Mobile view */}
-      <div className="flex h-full md:hidden flex-col justify-center">
-        <Tagline text="BASED IN KERALA, INDIA" />
-        <div className="main-contents gap-2 pt-3 pb-3">
-          <TextTransition styleName="name-role-text" text="M. FAHAD" />
-          <TextTransition styleName="adjective" text="THOUGHT-DRIVEN" />
-          <TextTransition styleName="name-role-text" text="DEVELOPER." />
+      <div className="flex h-full md:hidden flex-col justify-center gap-16">
+        <div>
+          <Tagline text="BASED IN KERALA, INDIA" />
+          <div className="main-contents gap-2 pt-3 pb-3">
+            <TextTransition styleName="name-role-text" text="M. FAHAD" />
+            <TextTransition styleName="adjective" text="THOUGHT-DRIVEN" />
+            <TextTransition styleName="name-role-text" text="DEVELOPER." />
+          </div>
+          <div className="flex flex-col gap-3">
+            <Tagline text="B.TECH CSE STUDENT" />
+            <Tagline text="FULL STACK DEVELOPER" />
+          </div>
         </div>
-        <div className="flex flex-col gap-3">
-          <Tagline text="B.TECH CSE STUDENT" />
-          <Tagline text="FULL STACK DEVELOPER" />
-        </div>
+
+        <PageDirectButton text="PROJECTS" link="/projects" />
       </div>
 
       {/* Laptop view */}

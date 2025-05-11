@@ -77,3 +77,33 @@
         font-size: 1.8em;
     }
 }
+
+@media only screen and (max-width: 370px) {
+    .name-role-text {
+        font-weight: bold;
+        font-size: 1.9em;
+        color: var(--text);
+        letter-spacing: 2px;
+    }
+
+    .adjective {
+        font-style: italic;
+        color: var(--tertiary);
+        font-size: 1.9em;
+    }
+    .project-tags,
+    .project-num {
+        font-size: 0.6em;
+    }
+    .project-name {
+        font-size: 1.5em;
+    }
+
+    .project-page-name {
+        font-size: 1.5em;
+    }
+
+    .navlinks {
+        font-size: 1.6em;
+    }
+}

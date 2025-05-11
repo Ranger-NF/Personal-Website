@@ -190,9 +190,50 @@
     }
 
     .project-page-summary {
-        max-width: 90vw;
+        max-width: none;
         font-weight: normal;
         font-size: 1em;
+        font-family: "IBM Plex Sans", sans-serif;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .main-contents {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.3;
+    }
+    .name-role-text {
+        font-weight: bold;
+        font-size: 2.1em;
+        color: var(--text);
+        letter-spacing: 2px;
+    }
+
+    .adjective {
+        font-style: italic;
+        color: var(--tertiary);
+        font-size: 2.1em;
+    }
+
+    .tagline {
+        line-height: 1;
+        font-size: 1.1em;
+    }
+
+    .about-head {
+        font-size: 2em;
+        color: var(--text);
+    }
+
+    .project-page-name {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 2.3em;
+    }
+
+    .project-page-summary {
+        max-width: 60vw;
+        font-weight: normal;
+        font-size: 0.9em;
         font-family: "IBM Plex Sans", sans-serif;
     }
 }

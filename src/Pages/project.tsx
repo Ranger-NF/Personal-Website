@@ -106,28 +106,28 @@ const ProjectPage: React.FC = () => {
         <div className="flex flex-col gap-6 md:justify-between w-full md:max-w-6xl">
           <div className="flex justify-center md:justify-start gap-1">
             {project.tags.map((tag, index) => (
-              <p
+              <div
                 key={index}
                 className="flex gap-1 text-[var(--tertiary)] font-light"
               >
                 <p>{tag.toUpperCase()}</p>
 
                 {!(index == project.tags.length - 1) && <p>•</p>}
-              </p>
+              </div>
             ))}
           </div>
-          <div className="flex flex-col md:flex-row gap-6 justify-between">
+          <div className="flex flex-col md:flex-row gap-6 justify-start md:justify-between">
             <TextTransition
-              styleName="project-page-name text-left"
+              styleName="project-page-name text-center md:text-left"
               revealSpeed={1}
               text={project.title.toUpperCase() + "."}
             />
-            <div className="flex justify-end overflow-hidden">
+            <div className="project-page-summary ">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 1 }}
-                className="project-page-summary text-end"
+                className="project-page-summary text-left md:text-end"
               >
                 {project.summary.toUpperCase()}
               </motion.div>
@@ -135,7 +135,7 @@ const ProjectPage: React.FC = () => {
           </div>
 
           <div className="flex flex-row gap-6 justify-between items-center pt-4">
-            {(project.githubLink || project.content) && (
+            {project.content && (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -159,7 +159,7 @@ const ProjectPage: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.9, duration: 1 }}
-                className="project-links flex justify-end gap-4 mt-2"
+                className="project-links flex md:ml-auto gap-4 mt-2"
               >
                 {project.githubLink && (
                   <a

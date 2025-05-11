@@ -1,4 +1,4 @@
-import { IconMenu, IconX } from "@tabler/icons-react";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 import React, { useState, useEffect } from "react";
 import NavLinks from "./navLinks";
 
@@ -33,8 +33,8 @@ const MobileMenu: React.FC = () => {
 
   return (
     <div className="z-[100]">
-      <IconMenu
-        className={`md:hidden h-6 w-6 cursor-pointer transition-opacity duration-300 ${
+      <IconMenu2
+        className={`md:hidden h-6 w-6 cursor-pointer stroke-3 transition-opacity duration-300 ${
           isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
         onClick={() => setIsOpen(true)}
@@ -73,12 +73,6 @@ const MobileMenu: React.FC = () => {
                 indexNum="03"
                 text="Github"
                 link="https://github.com/Ranger-NF"
-                onClick={handleLinkClick}
-              />
-              <NavLinks
-                indexNum="04"
-                text="Projects"
-                link="/projects"
                 onClick={handleLinkClick}
               />
             </div>
