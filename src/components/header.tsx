@@ -22,10 +22,10 @@ const Header: React.FC = () => {
       <AnimatePresence mode="wait">
         <motion.div
           key={isHomePage.toString()}
-          initial={{ y: "-100%" }}
+          initial={{ y: "-200%" }}
           animate={{ y: "0%" }}
-          exit={{ y: "-100%" }}
-          transition={{ duration: 0.2 }}
+          exit={{ y: "-200%" }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="flex w-full flex-row justify-between"
         >
           {!isHomePage && (
