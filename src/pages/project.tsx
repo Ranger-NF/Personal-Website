@@ -12,6 +12,13 @@ import { Autoplay } from "swiper/modules";
 import TextTransition from "../components/transitionText";
 
 import { motion } from "motion/react";
+import {
+  IconBrandGithub,
+  IconChevronDown,
+  IconChevronRight,
+} from "@tabler/icons-react";
+import Markdown from "react-markdown";
+import { scrollToElement } from "../utils/pageNav";
 
 interface ProjectsDataType {
   slug: string;
@@ -32,6 +39,8 @@ const ProjectPage: React.FC = () => {
   const navigate = useNavigate();
   const [project, setProject] = useState<ProjectsDataType | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const loadProject = async () => {
@@ -58,6 +67,20 @@ const ProjectPage: React.FC = () => {
     loadProject();
   }, [slug, path]);
 
+  useEffect(() => {
+    if (showContent) scrollToElement("learn-more");
+  }, [showContent]);
+
+  useEffect(() => {
+    if (project && project.images && project.images.length > 0) {
+      const timer = setTimeout(() => {
+        setImagesLoaded(true);
+      }, 500);
+
+      return () => clearTimeout(timer);
+    }
+  }, [project]);
+
   if (loading) {
     return (
       <div className="flex min-h-screen w-full justify-center text-center pt-40">
@@ -71,26 +94,114 @@ const ProjectPage: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col gap-6 p-4 md:p-8 min-h-screen overflow-x-hidden">
-      {project.images && (
-        <div className="flex justify-center md:max-h-[60vh] w-full pt-30">
-          <div className="w-full max-w-screen-xl">
-            <Swiper
-              slidesPerView="auto"
-              spaceBetween={30}
-              loop={true}
-              speed={4000}
-              autoplay={{
-                delay: 0,
-                disableOnInteraction: false,
-                reverseDirection: true,
-              }}
-              modules={[Autoplay]}
-              className="w-full h-full"
-            >
-              {project.images.length > 1
-                ? [...project.images, ...project.images, ...project.images].map(
-                    (projectImg, index) => (
+    <div className="flex flex-col gap-6 min-h-screen overflow-x-hidden justify-center px-4 pt-24">
+      {/* Content - Moved to the top */}
+      <div className="flex h-fit md:justify-center">
+        <div className="flex flex-col gap-6 md:justify-between w-full md:max-w-6xl">
+          <div className="flex justify-center md:justify-start gap-1">
+            {project.tags.map((tag, index) => (
+              <p
+                key={index}
+                className="flex gap-1 text-[var(--tertiary)] font-light"
+              >
+                <p>{tag.toUpperCase()}</p>
+
+                {!(index == project.tags.length - 1) && <p>•</p>}
+              </p>
+            ))}
+          </div>
+          <div className="flex flex-col md:flex-row gap-6 justify-between">
+            <TextTransition
+              styleName="project-page-name text-left"
+              revealSpeed={1}
+              text={project.title.toUpperCase() + "."}
+            />
+            <div className="flex justify-end overflow-hidden">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1 }}
+                className="project-page-summary text-end"
+              >
+                {project.summary.toUpperCase()}
+              </motion.div>
+            </div>
+          </div>
+
+          <div className="flex flex-row gap-6 justify-between items-center pt-4">
+            {(project.githubLink || project.content) && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9, duration: 1 }}
+                className="project-links flex justify-end gap-4 mt-2"
+              >
+                {project.content && (
+                  <div
+                    onClick={() => setShowContent(!showContent)}
+                    className="flex text-[var(--tertiary)] hover:scale-105 rounded-2xl cursor-pointer transition"
+                  >
+                    Learn More
+                    {showContent ? <IconChevronDown /> : <IconChevronRight />}
+                  </div>
+                )}
+              </motion.div>
+            )}
+
+            {(project.githubLink || project.externalLink) && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9, duration: 1 }}
+                className="project-links flex justify-end gap-4 mt-2"
+              >
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex bg-[var(--tertiary)] text-[var(--main)] hover:text-[var(--tertiary)] hover:bg-[var(--main)] p-3 rounded-4xl transition-colors"
+                  >
+                    <IconBrandGithub />
+                    GitHub
+                  </a>
+                )}
+              </motion.div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Scrollable content */}
+      <div className="flex-1 overflow-y-auto">
+        {/* Images - Moved to the bottom and conditionally rendered */}
+        {project.images && imagesLoaded && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center w-full mt-4"
+          >
+            <div className="w-full max-w-screen-xl">
+              <Swiper
+                slidesPerView="auto"
+                spaceBetween={30}
+                loop={true}
+                speed={4000}
+                autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                  reverseDirection: true,
+                }}
+                modules={[Autoplay]}
+                className="w-full h-full"
+              >
+                {project.images.length > 1
+                  ? [
+                      ...project.images,
+                      ...project.images,
+                      ...project.images,
+                    ].map((projectImg, index) => (
                       <SwiperSlide
                         key={index}
                         className="max-h-[40vh] md:h-full md:!w-auto p-5"
@@ -100,58 +211,43 @@ const ProjectPage: React.FC = () => {
                           loading="lazy"
                           className="h-full object-contain rounded-md shadow-lg"
                           style={{ width: "auto", height: "100%" }}
+                          alt={`Project image ${index + 1}`}
                         />
                       </SwiperSlide>
-                    ),
-                  )
-                : project.images.map((projectImg, index) => (
-                    <SwiperSlide key={index} className="!w-auto">
-                      <img
-                        src={projectImg}
-                        loading="lazy"
-                        className="h-full object-contain rounded-md"
-                        style={{ width: "auto", height: "100%" }}
-                      />
-                    </SwiperSlide>
-                  ))}
-            </Swiper>
-          </div>
-        </div>
-      )}
-
-      {/* Content */}
-      <div className="flex h-fit pt-18 md:pt-0 md:justify-center">
-        <div className="flex flex-col gap-6 md:justify-between w-full md:max-w-6xl">
-          <div className="flex justify-between">
-            {project.tags.map((tag) => {
-              return (
-                <p className="text-[var(--tertiary)] font-light">
-                  {tag.toUpperCase()}
-                </p>
-              );
-            })}
-          </div>
-          <div className="flex flex-col md:flex-row gap-6 justify-between">
-            <TextTransition
-              styleName="project-page-name text-left"
-              revealSpeed={1}
-              text={project.title.toUpperCase() + " ."}
-            />
-            <div className="flex justify-end overflow-hidden">
+                    ))
+                  : project.images.map((projectImg, index) => (
+                      <SwiperSlide key={index} className="!w-auto">
+                        <img
+                          src={projectImg}
+                          loading="lazy"
+                          className="h-full object-contain rounded-md"
+                          style={{ width: "auto", height: "100%" }}
+                          alt={`Project image ${index + 1}`}
+                        />
+                      </SwiperSlide>
+                    ))}
+              </Swiper>
+            </div>
+          </motion.div>
+        )}
+        {project.content && showContent && (
+          <div className="flex mt-4 justify-center">
+            <div
+              id="learn-more"
+              className="project-info flex md:max-w-6xl justify-center p-4"
+            >
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
-                className="project-page-summary text-end"
+                transition={{ duration: 0.3 }}
+                className="flex flex-col gap-2"
               >
-                {project.summary.toUpperCase()}
+                <Markdown>{project.content}</Markdown>
               </motion.div>
             </div>
           </div>
-        </div>
+        )}
       </div>
-
-      <hr className="flex flex-col md:hidden h-full justify-end" />
     </div>
   );
 };

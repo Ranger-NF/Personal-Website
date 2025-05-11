@@ -7,3 +7,7 @@ tags: ["React", "Website"]
 githubLink: https://github.com/Ranger-NF/Personal-Website
 imagesFolder: /images/projects/personal-site/
 ---
+
+This personal portfolio website is a modern, minimalist showcase of my work as a developer, built with **Vite, React, and TypeScript**.
+
+Design-wise, I owe a huge shoutout to **wandixu.com** (seriously, her work’s a masterpiece!) and **scalzodesign.be** for inspiration. I kept things clean, fast, and a bit playful—just like how I think code should be.

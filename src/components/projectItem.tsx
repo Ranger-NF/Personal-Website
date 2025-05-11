@@ -34,7 +34,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
             PROJECT /{indexNum}
           </div>
           <div className="project-name text-[var(--text)] group-hover:scale-105 transition ">
-            {projectName.toUpperCase()} .
+            {projectName.toUpperCase()}.
           </div>
           <div className="project-tags flex justify-end gap-1">
             {projectTags?.map((tag, index) => {
