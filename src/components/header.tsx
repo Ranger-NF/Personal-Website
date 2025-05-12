@@ -37,14 +37,12 @@ const Header: React.FC = () => {
           )}
 
           <div
-            className="flex hover:cursor-pointer"
+            className="flex hover:cursor-pointer items-center p-2"
             onClick={() => navigate("/")}
           >
             <img
               src="/logo.svg"
-              width={50}
-              height={50}
-              className={`${!isHomePage && "md:absolute md:left-[50%]"} h-12 w-12`}
+              className={`${!isHomePage && "md:absolute md:left-[50%]"} h-11 w-11 md:h-12 md:w-12`}
             />
           </div>
 

@@ -32,7 +32,7 @@ function HomePage() {
           </div>
         </div>
 
-        <PageDirectButton text="PROJECTS" link="/projects" />
+        <PageDirectButton text="projects" link="/projects" />
       </div>
 
       {/* Laptop view */}
