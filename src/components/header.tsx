@@ -7,6 +7,16 @@ import { motion, AnimatePresence } from "motion/react";
 
 const Header: React.FC = () => {
   const [isHomePage, setIsHomePage] = useState<boolean>(true);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -17,7 +27,7 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={`fixed flex w-full p-6 z-[50] overflow-hidden ${!isHomePage && "bg-[var(--main)]"} bg- rounded-lg`}
+      className={`fixed flex w-full p-6 z-[50] overflow-hidden ${!isHomePage && isScrolled && "bg-[var(--main)]"} rounded-lg transition`}
     >
       <AnimatePresence mode="wait">
         <motion.div

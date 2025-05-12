@@ -5,6 +5,8 @@
     --text: #151515;
     --tertiary: #d87739;
 
+    --bg-shade: rgba(242, 242, 242, 0.9);
+
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-weight: 400;
 

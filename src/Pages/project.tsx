@@ -100,7 +100,7 @@ const ProjectPage: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col gap-6 min-h-screen overflow-x-hidden justify-center px-4 pt-24">
+    <div className="flex flex-col gap-6 min-h-screen overflow-x-hidden justify-center px-4 pt-28">
       {/* Content - Moved to the top */}
       <div className="flex h-fit md:justify-center">
         <div className="flex flex-col gap-6 md:justify-between w-full md:max-w-6xl">
