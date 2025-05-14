@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           animate={{ y: "0%" }}
           exit={{ y: "-200%" }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="flex w-full flex-row justify-between"
+          className="flex w-full flex-row justify-between items-center"
         >
           {!isHomePage && (
             <div className="flex justify-start pt-1">
@@ -52,6 +52,7 @@ const Header: React.FC = () => {
           >
             <img
               src="/logo.svg"
+              alt="Logo Icon"
               className={`${!isHomePage && "md:absolute md:left-[50%]"} h-11 w-11 md:h-12 md:w-12`}
             />
           </div>

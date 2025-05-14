@@ -216,7 +216,7 @@ const ProjectPage: React.FC = () => {
                           src={projectImg}
                           className="h-full object-contain rounded-md shadow-lg"
                           style={{ width: "auto", height: "100%" }}
-                          alt={`Project image ${index + 1}`}
+                          alt={`Image ${index + 1} for ${project.title}`}
                         />
                       </SwiperSlide>
                     ))
@@ -226,7 +226,7 @@ const ProjectPage: React.FC = () => {
                           src={projectImg}
                           className="h-full object-contain rounded-md"
                           style={{ width: "auto", height: "100%" }}
-                          alt={`Project image ${index + 1}`}
+                          alt={`Image ${index + 1} for ${project.title}`}
                         />
                       </SwiperSlide>
                     ))}

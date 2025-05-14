@@ -35,6 +35,9 @@ importers:
       react-router-dom:
         specifier: ^7.5.2
         version: 7.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      spinners-react:
+        specifier: ^1.0.11
+        version: 1.0.11(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       swiper:
         specifier: ^11.2.6
         version: 11.2.6
@@ -1487,6 +1490,14 @@ packages:
 
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
+
+  spinners-react@1.0.11:
+    resolution: {integrity: sha512-CpQZixAI3dW+nLuJSrOTz4bDroSwLoIO5ljFt8wc1qy39yhK6MUubKnPD3z9/xIwNWFqy3mMRlW1mik/Fgqjow==}
+    peerDependencies:
+      '@types/react': ^16.x || ^17.x || ^18.x || ^19.x
+      '@types/react-dom': ^16.x || ^17.x || ^18.x || ^19.x
+      react: ^16.x || ^17.x || ^18.x || ^19.x
+      react-dom: ^16.x || ^17.x || ^18.x || ^19.x
 
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
@@ -3129,6 +3140,13 @@ snapshots:
   source-map-js@1.2.1: {}
 
   space-separated-tokens@2.0.2: {}
+
+  spinners-react@1.0.11(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      '@types/react': 19.1.0
+      '@types/react-dom': 19.1.1(@types/react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   sprintf-js@1.0.3: {}
 

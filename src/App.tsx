@@ -5,11 +5,21 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import HomePage from "./pages/home";
-import ProjectsListPage from "./pages/projectsList";
-import ProjectPage from "./pages/project";
+import { lazy, Suspense } from "react";
+
 import Layout from "./components/layout";
-import AboutPage from "./pages/about";
+import { SpinnerDiamond } from "spinners-react";
+
+const HomePage = lazy(() => import("./pages/home"));
+const ProjectsListPage = lazy(() => import("./pages/projectsList"));
+const ProjectPage = lazy(() => import("./pages/project"));
+const AboutPage = lazy(() => import("./pages/about"));
+
+const Loading = () => (
+  <div className="loading-container">
+    <SpinnerDiamond color="#d87739" size={100} />
+  </div>
+);
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +33,11 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<Loading />}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
 
 export default App;

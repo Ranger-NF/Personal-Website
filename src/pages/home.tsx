@@ -79,9 +79,11 @@ function HomePage() {
         <div className="hidden md:flex flex-col justify-end gap-3">
           <NavLinks indexNum="01" text="Projects" link="/projects" />
         </div>
-        <div className="flex justify-center font-light text-xs items-end">
-          MADE WITH 💭 BY FAHAD
-        </div>
+        {typeof window !== "undefined" && (
+          <div className="flex justify-center font-light text-xs items-end">
+            MADE WITH 💭 BY FAHAD
+          </div>
+        )}
       </div>
     </div>
   );

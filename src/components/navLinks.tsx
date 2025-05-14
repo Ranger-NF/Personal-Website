@@ -1,6 +1,7 @@
 import { IconArrowDownRight } from "@tabler/icons-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import "./components.css";
 
 interface NavLinksProp {
   indexNum: string;

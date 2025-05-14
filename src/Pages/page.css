@@ -196,7 +196,7 @@
         font-family: "IBM Plex Sans", sans-serif;
     }
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 372px) {
     .main-contents {
         display: flex;
         flex-direction: column;
@@ -204,7 +204,7 @@
     }
     .name-role-text {
         font-weight: bold;
-        font-size: 2.1em;
+        font-size: 1.6em;
         color: var(--text);
         letter-spacing: 2px;
     }
@@ -212,16 +212,21 @@
     .adjective {
         font-style: italic;
         color: var(--tertiary);
-        font-size: 2.1em;
+        font-size: 1.6em;
     }
 
     .tagline {
         line-height: 1;
-        font-size: 1.1em;
+        font-size: 1em;
+    }
+
+    .about-page p,
+    a {
+        font-size: 0.8em;
     }
 
     .about-head {
-        font-size: 1.5em;
+        font-size: 1.1em;
         color: var(--text);
     }
 

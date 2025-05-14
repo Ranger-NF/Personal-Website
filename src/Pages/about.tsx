@@ -1,7 +1,7 @@
 function AboutPage() {
   return (
     <div className="grid grid-rows-[0.5fr_1fr] md:grid-rows-none md:grid-cols-[1.5fr_1fr] p-8 gap-6 pb-10 pt-28">
-      <div className="gap-6">
+      <div className="about-page gap-6">
         <h1 className="about-head">
           A little bit <span className="about-me">about me .</span>
         </h1>
@@ -58,8 +58,8 @@ function AboutPage() {
         <img
           src="/fahads-photo.jpg"
           loading="lazy"
+          alt="Fahad's Potrait photo"
           draggable={false}
-          alt="Fahad's Photo"
         />
       </div>
     </div>
