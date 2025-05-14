@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ProjectItem from "../components/projectItem";
 import { getProjectList } from "../utils/markdownParser";
 import { motion } from "motion/react";
+import MetaComponent from "../components/meta";
 
 interface ProjectsDataType {
   slug: string;
@@ -45,26 +46,32 @@ const ProjectsListPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="grid gap-12 p-8 pt-24">
-      <motion.div
-        className="grid w-full h-full"
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
-      >
-        {projects.map((project, index) => (
-          <motion.div key={project.slug} variants={itemVariants}>
-            <ProjectItem
-              key={index}
-              indexNum={(index + 1).toString().padStart(2, "0")}
-              projectTags={project.tags}
-              projectName={project.title}
-              slug={project.slug}
-            />
-          </motion.div>
-        ))}
-      </motion.div>
-    </div>
+    <>
+      <MetaComponent
+        pageTitle="Projects"
+        pageDescription="List of projects made by Fahad"
+      />
+      <div className="grid gap-12 p-8 pt-24">
+        <motion.div
+          className="grid w-full h-full"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
+          {projects.map((project, index) => (
+            <motion.div key={project.slug} variants={itemVariants}>
+              <ProjectItem
+                key={index}
+                indexNum={(index + 1).toString().padStart(2, "0")}
+                projectTags={project.tags}
+                projectName={project.title}
+                slug={project.slug}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </>
   );
 };
 
