@@ -16,25 +16,5 @@ export default defineConfig({
   build: {
     assetsDir: "",
     copyPublicDir: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom", "react-router-dom"],
-          layout: [
-            "./src/components/layout.tsx",
-            "./src/components/header.tsx",
-            "./src/components/navLinks.tsx",
-            "./src/components/mobileMenu.tsx",
-          ],
-          home: ["./src/pages/home.tsx"],
-          about: ["./src/pages/about.tsx"],
-          projects: [
-            "./src/pages/projectsList.tsx",
-            "./src/pages/project.tsx",
-            "./src/components/projectItem.tsx",
-          ],
-        },
-      },
-    },
   },
 });
