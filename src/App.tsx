@@ -9,6 +9,7 @@ import { lazy, Suspense } from "react";
 
 import Layout from "./components/layout";
 import { SpinnerDiamond } from "spinners-react";
+import { HelmetProvider } from "react-helmet-async";
 
 const HomePage = lazy(() => import("./pages/home"));
 const ProjectsListPage = lazy(() => import("./pages/projectsList"));
@@ -34,9 +35,11 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <Suspense fallback={<Loading />}>
-      <RouterProvider router={router} />
-    </Suspense>
+    <HelmetProvider>
+      <Suspense fallback={<Loading />}>
+        <RouterProvider router={router} />
+      </Suspense>
+    </HelmetProvider>
   );
 }
 
