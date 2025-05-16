@@ -3,20 +3,20 @@ import "./components.css";
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-interface ProjectItemProps {
+interface BlogItemProps {
   indexNum: string;
-  projectName: string;
-  projectTags?: string[];
+  blogTitle: string;
+  blogTags?: string[];
   slug?: string;
 }
 
-const ProjectItem: React.FC<ProjectItemProps> = ({
+const BlogItem: React.FC<BlogItemProps> = ({
   indexNum,
-  projectName,
-  projectTags = [],
+  blogTitle,
+  blogTags = [],
   slug,
 }) => {
-  const tagCount = projectTags?.length;
+  const tagCount = blogTags?.length;
 
   const path = useLocation();
   const navigate = useNavigate();
@@ -24,19 +24,19 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   return (
     <div className="flex flex-col">
       <div
-        onClick={() => navigate("/project/" + slug, { state: { from: path } })}
+        onClick={() => navigate("/blog/" + slug, { state: { from: path } })}
         className="group items-center py-4 hover:cursor-pointer"
       >
         {/* desktop view */}
         <div className="hidden md:grid md:grid-cols-[0.5fr_1.5fr_1fr_0.5fr] items-center">
           <div className="project-num text-[var(--tertiary)] transition">
-            PROJECT /{indexNum}
+            BLOG /{indexNum}
           </div>
           <div className="project-name text-[var(--text)] group-hover:scale-105 transition ">
-            {projectName.toUpperCase()}.
+            {blogTitle.toUpperCase()}.
           </div>
           <div className="project-tags flex justify-end gap-1">
-            {projectTags?.map((tag, index) => {
+            {blogTags?.map((tag, index) => {
               return (
                 <div
                   key={index}
@@ -57,10 +57,10 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           {/* top texts */}
           <div className="grid grid-cols-[1fr_3fr]">
             <div className="project-num text-[var(--tertiary)] transition">
-              PROJECT /{indexNum}
+              BLOG /{indexNum}
             </div>
             <div className="project-tags flex justify-end gap-1">
-              {projectTags?.map((tag, index) => {
+              {blogTags?.map((tag, index) => {
                 return (
                   <div className="project-tag text-[var(--tertiary)]">
                     {tag.toUpperCase()} {index == tagCount - 1 ? " " : "•"}
@@ -72,7 +72,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           {/* Bottom text */}
           <div className="grid grid-cols-[3fr_1fr] pt-1">
             <div className="project-name text-[var(--text)] group-hover:scale-105 transition ">
-              {projectName.toUpperCase()} .
+              {blogTitle.toUpperCase()} .
             </div>
           </div>
         </div>
@@ -82,4 +82,4 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   );
 };
 
-export default ProjectItem;
+export default BlogItem;

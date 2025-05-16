@@ -15,6 +15,8 @@ const HomePage = lazy(() => import("./pages/home"));
 const ProjectsListPage = lazy(() => import("./pages/projectsList"));
 const ProjectPage = lazy(() => import("./pages/project"));
 const AboutPage = lazy(() => import("./pages/about"));
+const BlogsListPage = lazy(() => import("./pages/blogsList"));
+const BlogPage = lazy(() => import("./pages/blog"));
 
 const Loading = () => (
   <div className="loading-container">
@@ -28,6 +30,8 @@ const router = createBrowserRouter(
       <Route path="/" element={<HomePage />} />
       <Route path="/projects" element={<ProjectsListPage />} />
       <Route path="/project/:slug" element={<ProjectPage />} />
+      <Route path="/blogs" element={<BlogsListPage />} />
+      <Route path="/blog/:slug" element={<BlogPage />} />
       <Route path="/about" element={<AboutPage />} />
     </Route>,
   ),
