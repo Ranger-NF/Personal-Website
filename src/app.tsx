@@ -20,7 +20,7 @@ const BlogPage = lazy(() => import("./pages/blog"));
 
 const Loading = () => (
   <div className="loading-container">
-    <SpinnerDiamond color="#d87739" size={100} />
+    <SpinnerDiamond color="#D42537" size={100} />
   </div>
 );
 

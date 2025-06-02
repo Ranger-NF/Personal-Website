@@ -13,27 +13,21 @@ function HomePage() {
         pageTitle="Home"
         pageDescription="Hi, I’m  Mohammed Fahad, a passionate student who loves turning ideas into impactful digital experiences.
         This is where I share:
-
-            🚀 Projects I’ve built with heart and hustle
-
-            🧠 Experiments that helped me learn and grow
-
-            📚 Notes & Resources I’ve curated for fellow learners
-
+            🚀 Projects I’ve built
             🌱 Things I’m exploring right now in tech, design, and life
 
         I'm always learning, building, and pushing myself to the next level.
         Feel free to look around — and if something inspires you, let’s connect!"
       />
       <div className="flex flex-col min-h-dvh p-8">
-        <video
+        {/* <video
           autoPlay
           muted
           loop
           id="myVideo"
           className="hidden md:block md:fixed right-0 top-0 min-w-full min-h-full -z-5"
           src="noodle.webm"
-        />
+        /> */}
 
         {/* Mobile view */}
         <div className="flex h-full md:hidden flex-col justify-center gap-16">
