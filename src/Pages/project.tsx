@@ -172,7 +172,7 @@ const ProjectPage: React.FC = () => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex bg-[var(--tertiary)] text-[var(--main)] hover:text-[var(--tertiary)] hover:bg-[var(--main)] p-3 rounded-4xl transition-colors"
+                      className="flex bg-[var(--tertiary)] text-[var(--main)] hover:text-[var(--tertiary)] hover:bg-[var(--main)] hover:border-2 hover:border-[var(--tertiary)] p-3 rounded-4xl transition-colors"
                     >
                       <IconBrandGithub />
                       GitHub

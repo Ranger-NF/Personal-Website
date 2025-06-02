@@ -95,9 +95,14 @@ function HomePage() {
             <NavLinks indexNum="01" text="Projects" link="/projects" />
           </div>
           {typeof window !== "undefined" && (
-            <div className="flex justify-center font-light text-xs items-end">
-              MADE WITH 💭 BY FAHAD
-            </div>
+            <p>
+              <a
+                href="https://github.com/Ranger-NF/personal-website"
+                className="flex justify-center font-light text-xs items-end"
+              >
+                MADE OPENLY BY FAHAD
+              </a>
+            </p>
           )}
         </div>
       </div>
