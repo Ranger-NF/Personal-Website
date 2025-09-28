@@ -52,6 +52,12 @@
     opacity: 0;
 }
 
+.blog-title {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+}
+
 @media only screen and (max-width: 768px) {
     .name-role-text {
         font-weight: bold;
@@ -75,6 +81,10 @@
 
     .navlinks {
         font-size: 1.6em;
+    }
+
+    .blog-title {
+        font-size: 1.3em;
     }
 }
 
@@ -105,5 +115,9 @@
 
     .navlinks {
         font-size: 1.6em;
+    }
+
+    .blog-title {
+        font-size: 1.2em;
     }
 }

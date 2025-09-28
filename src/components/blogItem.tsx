@@ -28,25 +28,14 @@ const BlogItem: React.FC<BlogItemProps> = ({
         className="group items-center py-4 hover:cursor-pointer"
       >
         {/* desktop view */}
-        <div className="hidden md:grid md:grid-cols-[0.5fr_1.5fr_1fr_0.5fr] items-center">
+        <div className="hidden md:grid md:grid-cols-[0.5fr_1.5fr_0.5fr] items-center">
           <div className="project-num text-[var(--tertiary)] transition">
             BLOG /{indexNum}
           </div>
-          <div className="project-name text-[var(--text)] group-hover:scale-105 transition ">
-            {blogTitle.toUpperCase()}.
+          <div className="blog-title text-[var(--text)] group-hover:scale-105 transition ">
+            {blogTitle}.
           </div>
-          <div className="project-tags flex justify-end gap-1">
-            {blogTags?.map((tag, index) => {
-              return (
-                <div
-                  key={index}
-                  className="project-tag text-[var(--tertiary)] "
-                >
-                  {tag.toUpperCase()} {index == tagCount - 1 ? " " : "•"}
-                </div>
-              );
-            })}
-          </div>
+
           <div className="flex justify-end p-4">
             <IconArrowRight className="text-[var(--tertiary)] w-10 h-10 group-hover:scale-125 transition" />
           </div>
@@ -71,7 +60,7 @@ const BlogItem: React.FC<BlogItemProps> = ({
           </div>
           {/* Bottom text */}
           <div className="grid grid-cols-[3fr_1fr] pt-1">
-            <div className="project-name text-[var(--text)] group-hover:scale-105 transition ">
+            <div className="blog-title text-[var(--text)] group-hover:scale-105 transition ">
               {blogTitle.toUpperCase()} .
             </div>
           </div>

@@ -35,12 +35,12 @@ const itemVariants = {
 const BlogsListPage: React.FC = () => {
   const [blogs, setBlogs] = useState<BlogsDataType[]>([]);
 
-  const processProjectsData = async () => {
+  const processBlogssData = async () => {
     setBlogs(await getBlogList());
   };
 
   useEffect(() => {
-    processProjectsData();
+    processBlogssData();
   }, []);
 
   return (

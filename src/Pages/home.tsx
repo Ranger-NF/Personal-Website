@@ -30,7 +30,7 @@ function HomePage() {
         /> */}
 
         {/* Mobile view */}
-        <div className="flex h-full md:hidden flex-col justify-center gap-16">
+        <div className="flex h-full md:hidden flex-col justify-between gap-16 pt-30 pb-10 ">
           <div>
             <Tagline text="BASED IN KERALA, INDIA" />
             <div className="main-contents gap-2 pt-3 pb-3">
@@ -43,8 +43,10 @@ function HomePage() {
               <Tagline text="FULL STACK DEVELOPER" />
             </div>
           </div>
-
-          <PageDirectButton text="projects" link="/projects" />
+          <div className="flex flex-col gap-2">
+            <PageDirectButton text="projects" link="/projects" />
+            <PageDirectButton text="blogs" link="/blogs" />
+          </div>
         </div>
 
         {/* Laptop view */}
@@ -93,6 +95,7 @@ function HomePage() {
         <div className="flex justify-center h-fit md:justify-between">
           <div className="hidden md:flex flex-col justify-end gap-3">
             <NavLinks indexNum="01" text="Projects" link="/projects" />
+            <NavLinks indexNum="02" text="Blogs" link="/blogs" />
           </div>
           {typeof window !== "undefined" && (
             <p>

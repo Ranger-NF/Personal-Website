@@ -12,7 +12,7 @@ export default defineConfig({
     allowedHosts: ["ranger.hackclub.app", "localhost"],
   },
   plugins: [react(), tailwindcss()],
-  assetsInclude: ["**/*.md"],
+  assetsInclude: ["**/*.md", "**/*.webp", "**/*.png", "**/*.svg"],
   build: {
     assetsDir: "",
     copyPublicDir: true,

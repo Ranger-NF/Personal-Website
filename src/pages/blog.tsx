@@ -65,7 +65,7 @@ const ProjectPage: React.FC = () => {
   return (
     <>
       <MetaComponent pageTitle={blog.title} pageDescription={blog.summary} />
-      <div className="max-w-4xl mx-auto pt-28">
+      <div className="max-w-4xl mx-auto pt-28 px-10">
         <div className="flex flex-col gap-2 pb-4">
           <div>{blog.date.toDateString().split(" ").slice(1).join(" ")}</div>
           <div className="blog-title">{blog.title.toUpperCase()}.</div>
