@@ -10,6 +10,7 @@ import { lazy, Suspense } from "react";
 import Layout from "./components/layout";
 import { SpinnerDiamond } from "spinners-react";
 import { HelmetProvider } from "react-helmet-async";
+import Downloads from "./pages/downloads";
 
 const HomePage = lazy(() => import("./pages/home"));
 const ProjectsListPage = lazy(() => import("./pages/projectsList"));
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
       <Route path="/blogs" element={<BlogsListPage />} />
       <Route path="/blog/:slug" element={<BlogPage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/downloads" element={<Downloads />} />
     </Route>,
   ),
 );
