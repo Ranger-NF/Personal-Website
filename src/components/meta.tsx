@@ -19,6 +19,7 @@ function MetaComponent({
         property="og:description"
         content={pageDescription ? "Webpage of Fahad's site" : pageDescription}
       />
+      <meta property="og:image" content="/opengraph-image.png" />
       <link rel="canonical" href="https://justfahad.me/" />
     </Helmet>
   );
