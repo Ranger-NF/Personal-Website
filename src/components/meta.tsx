@@ -14,9 +14,15 @@ function MetaComponent({
   const baseUrl = "https://justfahad.me";
   const canonicalUrl = baseUrl + location.pathname;
 
+  const imageUrl = pagePreview
+    ? `${baseUrl}${pagePreview.startsWith("/") ? "" : "/"}${pagePreview}`
+    : `${baseUrl}/opengraph-image.jpg`;
+
   return (
     <Helmet>
-      <title>Fahad | {pageTitle}</title>
+      <title>{pageTitle ? `${pageTitle} | Fahad` : "Fahad"}</title>
+      <meta property="og:type" content="website" />
+
       <meta name="description" content={pageDescription} />
       <meta
         property="og:title"
@@ -26,22 +32,20 @@ function MetaComponent({
         property="og:description"
         content={
           pageDescription
-            ? "Fahad’s personal website showcasing projects, blogs, and insights on technology, design, and development."
-            : pageDescription
+            ? pageDescription
+            : "Fahad’s personal website showcasing projects, blogs, and insights on technology, design, and development."
         }
       />
-      <meta
-        property="og:image"
-        content={
-          pagePreview
-            ? `${baseUrl}/${pagePreview}`
-            : `${baseUrl}/opengraph-image.jpg`
-        }
-      />
+      <meta property="og:image" content={imageUrl} />
 
       <meta property="og:url" content={canonicalUrl} />
 
       <link rel="canonical" href={canonicalUrl} />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={`${pageTitle} | Fahad`} />
+      <meta name="twitter:description" content={pageDescription} />
+      <meta name="twitter:image" content={imageUrl} />
     </Helmet>
   );
 }
