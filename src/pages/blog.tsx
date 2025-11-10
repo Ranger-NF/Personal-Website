@@ -64,7 +64,11 @@ const ProjectPage: React.FC = () => {
 
   return (
     <>
-      <MetaComponent pageTitle={blog.title} pageDescription={blog.summary} />
+      <MetaComponent
+        pageTitle={blog.title}
+        pageDescription={blog.summary}
+        pagePreview={blog.coverImage ? blog.coverImage : null}
+      />
       <div className="max-w-4xl mx-auto pt-28 px-10">
         <div className="flex flex-col gap-2 pb-4">
           <div>{blog.date.toDateString().split(" ").slice(1).join(" ")}</div>

@@ -3,9 +3,11 @@ import { Helmet } from "react-helmet-async";
 function MetaComponent({
   pageTitle,
   pageDescription,
+  pagePreview,
 }: {
   pageTitle: string;
   pageDescription: string;
+  pagePreview?: string | null;
 }) {
   return (
     <Helmet>
@@ -19,7 +21,10 @@ function MetaComponent({
         property="og:description"
         content={pageDescription ? "Webpage of Fahad's site" : pageDescription}
       />
-      <meta property="og:image" content="/opengraph-image.jpg" />
+      <meta
+        property="og:image"
+        content={pagePreview ? pagePreview : "/opengraph-image.jpg"}
+      />
       <link rel="canonical" href="https://justfahad.me/" />
     </Helmet>
   );
