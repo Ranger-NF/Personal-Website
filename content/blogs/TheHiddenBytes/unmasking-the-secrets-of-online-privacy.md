@@ -2,6 +2,7 @@
 title: "🕵🏻 Unmasking the Secrets of Online Privacy"
 date: 2023-12-06T13:13:30+05:30
 author: Ranger
+summary: Why I chose to do things the way I'm doing it right now.
 series:
 - The Hidden Bytes
 cover:

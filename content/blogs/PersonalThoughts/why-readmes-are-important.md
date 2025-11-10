@@ -2,6 +2,7 @@
 title: "📖 Why don't they include a README?"
 date: 2024-09-16T13:08:06+05:30
 author: Ranger
+summary: Why should people include README?
 cover:
     image: "images/blogs/why_readmes_are_important.png"
 ---

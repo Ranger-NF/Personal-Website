@@ -4,6 +4,7 @@ date: 2024-06-04T18:40:15+05:30
 author: Ranger
 series:
 - BlastOff
+summary: "Why did I build my own game? How I feel about it now?"
 cover:
     image: "images/blogs/thoughts_behind_blastoff.png"
 ---

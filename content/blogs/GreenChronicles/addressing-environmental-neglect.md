@@ -1,7 +1,8 @@
 ---
 title: "🚯 Addressing Environmental Neglect: A Roadside Tale"
 date: 2023-12-16T11:55:10+05:30
-author: Ranger
+author: Fahad
+summary: A rant about people's perspective toward cleanliness
 series:
 - Green Chronicles
 cover:

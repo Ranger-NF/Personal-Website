@@ -1,6 +1,7 @@
 ---
 title: "🍳 Projects I Made as a Programmer"
 date: 2024-09-03T09:44:52+05:30
+summary: My project building journey till now
 author: Ranger
 ---
 

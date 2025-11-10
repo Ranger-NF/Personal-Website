@@ -2,6 +2,7 @@
 title: "👑 Dethroning Google: Exploring Fresh Horizons"
 date: 2023-12-24T16:20:45+05:30
 author: Ranger
+summary: How I recommend others to enter into a degoogled life
 series:
 - The Hidden Bytes
 cover:
@@ -35,4 +36,3 @@ Much like search engines, a plethora of browser alternatives exist. peep [itsfos
 ## 🔄 Tying the Digital Knot: Wrapping It Up
 
 Securing your digital tracks is the opening act in the play for a private internet life. Remember you will never be truly private on the internet, but the pursuit itself makes a difference! 🕵️‍♂️🌐✨
-

@@ -1,7 +1,8 @@
 ---
 title: "😅 Meeting my GitHub feed in-person @ IndiaFOSS 2025"
 date: 2025-09-28T14:50:00+05:30
-author: Ranger
+author: Fahad
+summary: "Sharing my experience at IndiaFOSS 2025 - My very first event outside my home state."
 cover:
     image: "images/blogs/tinkerhub-indiafoss-25.webp"
 ---

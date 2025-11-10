@@ -1,7 +1,7 @@
 ---
 title: "🙂 Atleast I Tried..."
 date: 2024-11-20T21:26:59+05:30
-summary: "A story of expectation vs reality"
+summary: "A story of expectation vs reality - What I thought about college vs what actually happened"
 cover:
     image: "images/blogs/i-tried.svg"
 ---
